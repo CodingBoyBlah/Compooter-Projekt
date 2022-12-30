@@ -49,13 +49,3 @@ mw = MainWindow()
 
 # Run the app
 app.exec_()
-
-
-
-
-
-
-
-
-
-
