@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>500</height>
+    <width>573</width>
+    <height>702</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,28 +17,33 @@
    <widget class="QLabel" name="main_header_name">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>20</x>
       <y>10</y>
-      <width>331</width>
-      <height>71</height>
+      <width>531</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>36</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="text">
-     <string>flipkart(placeholder)</string>
+     <string>Gocars</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="tyreButton">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>80</y>
-      <width>56</width>
-      <height>20</height>
+      <x>15</x>
+      <y>130</y>
+      <width>121</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
@@ -48,10 +53,10 @@
    <widget class="QPushButton" name="steeringButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>80</y>
-      <width>56</width>
-      <height>20</height>
+      <x>160</x>
+      <y>130</y>
+      <width>121</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
@@ -61,10 +66,10 @@
    <widget class="QPushButton" name="engineButton">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>80</y>
-      <width>56</width>
-      <height>21</height>
+      <x>300</x>
+      <y>130</y>
+      <width>121</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
@@ -74,10 +79,10 @@
    <widget class="QPushButton" name="suspensionButton">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>80</y>
-      <width>56</width>
-      <height>21</height>
+      <x>440</x>
+      <y>130</y>
+      <width>121</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
@@ -87,10 +92,10 @@
    <widget class="QLabel" name="emailLabel">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>280</y>
+      <x>20</x>
+      <y>330</y>
       <width>231</width>
-      <height>31</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -105,10 +110,10 @@
    <widget class="QLabel" name="contactLabel">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>250</y>
-      <width>171</width>
-      <height>31</height>
+      <x>20</x>
+      <y>240</y>
+      <width>341</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -123,10 +128,10 @@
    <widget class="QLabel" name="phone_label">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>320</y>
-      <width>151</width>
-      <height>16</height>
+      <x>20</x>
+      <y>440</y>
+      <width>271</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -138,26 +143,13 @@
      <string>Phone:</string>
     </property>
    </widget>
-   <widget class="QScrollBar" name="verticalScrollBar">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>0</y>
-      <width>16</width>
-      <height>581</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>700</width>
+     <width>573</width>
      <height>18</height>
     </rect>
    </property>
