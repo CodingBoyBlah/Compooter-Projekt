@@ -38,7 +38,7 @@ background-color: rgb(186, 23, 23);</string>
       <rect>
        <x>30</x>
        <y>20</y>
-       <width>571</width>
+       <width>691</width>
        <height>91</height>
       </rect>
      </property>
@@ -62,7 +62,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 15pt &quot;Segoe UI&quot;;
 
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
@@ -81,7 +81,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 12pt &quot;Segoe UI&quot;;
 
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
@@ -100,7 +100,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 13pt &quot;Segoe UI&quot;;
 
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);
@@ -139,7 +139,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 15pt &quot;Segoe UI&quot;;
 
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
@@ -158,7 +158,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 14pt &quot;Segoe UI&quot;;
 
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
@@ -178,7 +178,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">
-font: 700 15pt &quot;Segoe UI&quot;;
+font: 700 12pt &quot;Segoe UI&quot;;
 </string>
     </property>
     <property name="text">
@@ -192,7 +192,7 @@ font: 700 15pt &quot;Segoe UI&quot;;
      <x>0</x>
      <y>0</y>
      <width>700</width>
-     <height>25</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>
