@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
+    <width>830</width>
     <height>500</height>
    </rect>
   </property>
@@ -14,54 +14,77 @@
    <string>Steering Window</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>951</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(186, 23, 23);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>571</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 700 40pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>STEERING</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
-      <width>171</width>
-      <height>51</height>
+      <y>100</y>
+      <width>811</width>
+      <height>61</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>22</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
-     <string>Steering</string>
+     <string>A steering system controls the movement of the tyre.</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>90</y>
-      <width>641</width>
-      <height>51</height>
+      <x>10</x>
+      <y>180</y>
+      <width>251</width>
+      <height>71</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>A steering is the one which ultimately supports and runs the car.
-</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="test1">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>150</y>
-      <width>81</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>steering</string>
+     <string>Steering wheels</string>
     </property>
    </widget>
   </widget>
@@ -70,8 +93,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>700</width>
-     <height>26</height>
+     <width>830</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>

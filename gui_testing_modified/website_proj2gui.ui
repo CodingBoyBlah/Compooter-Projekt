@@ -14,29 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="main_header_name">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>531</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>36</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Gocars</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QPushButton" name="tyreButton">
     <property name="geometry">
      <rect>
@@ -45,6 +22,11 @@
       <width>121</width>
       <height>81</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Tyres </string>
@@ -59,6 +41,11 @@
       <height>81</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(186, 23, 23);</string>
+    </property>
     <property name="text">
      <string>Steering</string>
     </property>
@@ -72,8 +59,13 @@
       <height>81</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
-     <string>Engine Parts</string>
+     <string>Engine</string>
     </property>
    </widget>
    <widget class="QPushButton" name="suspensionButton">
@@ -84,6 +76,11 @@
       <width>121</width>
       <height>81</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Segoe UI&quot;;
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Suspension</string>
@@ -143,6 +140,50 @@
      <string>Phone:</string>
     </property>
    </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-91</x>
+      <y>-21</y>
+      <width>701</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(186, 23, 23);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="main_header_name">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>531</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>36</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Gocars</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -150,7 +191,7 @@
      <x>0</x>
      <y>0</y>
      <width>573</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

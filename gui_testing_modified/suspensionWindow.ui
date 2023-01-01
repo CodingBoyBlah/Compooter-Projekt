@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
+    <width>858</width>
     <height>500</height>
    </rect>
   </property>
@@ -14,54 +14,137 @@
    <string>Suspension Window</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>261</width>
-      <height>51</height>
+      <x>-20</x>
+      <y>-10</y>
+      <width>951</width>
+      <height>111</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>22</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(186, 23, 23);</string>
     </property>
-    <property name="text">
-     <string>Suspension</string>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
     </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>571</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 700 40pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>SUSPENSION</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
-      <width>641</width>
-      <height>51</height>
+      <y>90</y>
+      <width>861</width>
+      <height>101</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>A suspension is the one which ultimately supports and runs the car.
+    <property name="styleSheet">
+     <string notr="true">
+font: 700 16pt &quot;Segoe UI&quot;;
 </string>
     </property>
+    <property name="text">
+     <string>The Suspension system maximizes the friction for a stable, 
+controlled, and efficient driving experience.</string>
+    </property>
    </widget>
-   <widget class="QPushButton" name="test1">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>100</y>
-      <width>81</width>
-      <height>51</height>
+      <y>190</y>
+      <width>191</width>
+      <height>71</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
-     <string>suspension</string>
+     <string>Shock Absorber</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>190</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Control Arm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Stabilizer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>290</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Coil Spring</string>
     </property>
    </widget>
   </widget>
@@ -70,8 +153,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>700</width>
-     <height>26</height>
+     <width>858</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>

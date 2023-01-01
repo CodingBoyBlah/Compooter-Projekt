@@ -44,7 +44,8 @@
      <property name="styleSheet">
       <string notr="true">font: 18pt &quot;Segoe UI&quot;;
 
-background-color: rgb(186, 23, 23);</string>
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Front Wheels</string>
@@ -61,7 +62,8 @@ background-color: rgb(186, 23, 23);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">font: 18pt &quot;Segoe UI&quot;;
-background-color: rgb(186, 23, 23);</string>
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Rear Wheels</string>
@@ -147,7 +149,8 @@ font: 700 20pt &quot;Segoe UI&quot;;
      <property name="styleSheet">
       <string notr="true">font: 18pt &quot;Segoe UI&quot;;
 
-background-color: rgb(186, 23, 23);</string>
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Offroad Tyres</string>
@@ -165,7 +168,8 @@ background-color: rgb(186, 23, 23);</string>
      <property name="styleSheet">
       <string notr="true">font: 18pt &quot;Segoe UI&quot;;
 
-background-color: rgb(186, 23, 23);</string>
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Sports Tyres</string>
@@ -183,7 +187,8 @@ background-color: rgb(186, 23, 23);</string>
      <property name="styleSheet">
       <string notr="true">font: 18pt &quot;Segoe UI&quot;;
 
-background-color: rgb(186, 23, 23);</string>
+background-color: rgb(186, 23, 23);
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Radial Tyres</string>
@@ -220,7 +225,7 @@ background-color: rgb(186, 23, 23);</string>
       <property name="styleSheet">
        <string notr="true">
 font: 700 40pt &quot;Segoe UI&quot;;
-</string>
+color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string>WHEELS &amp; TYRES</string>
