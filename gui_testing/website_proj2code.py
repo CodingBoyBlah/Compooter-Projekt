@@ -22,15 +22,22 @@ class UI(QMainWindow):
         self.mainLabel = self.findChild(QLabel, 'main_header_name')
 
         # When button pressed, Open new window
-        self.tyreButton.clicked.connect(self.openWindow)
+        self.tyreButton.clicked.connect(self.openTyreWindow)
+        self.suspensionButton.clicked.connect(self.openSuspensionWindow)
 
         self.show()
 
-    def openWindow(self):
+    def openTyreWindow(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_window2()
         self.ui.setupUi(self.window)
         self.window.show()
+
+    def openSuspensionWindow(self):
+        from suspensionWindowCode import Ui_suspensionWindow
+        self.suspension_window = Ui_suspensionWindow()
+        self.suspension_window.show()
+
 
 app = QApplication(sys.argv)
 UIWindow = UI()
