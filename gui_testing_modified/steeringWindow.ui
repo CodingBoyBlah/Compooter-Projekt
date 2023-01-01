@@ -58,11 +58,20 @@ color: rgb(255, 255, 255);</string>
       <x>10</x>
       <y>100</y>
       <width>811</width>
-      <height>61</height>
+      <height>121</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">font: 15pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string>A steering system controls the movement of the tyre.</string>
@@ -71,8 +80,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>180</y>
+      <x>20</x>
+      <y>240</y>
       <width>251</width>
       <height>71</height>
      </rect>
@@ -94,7 +103,7 @@ color: rgb(255, 255, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>830</width>
-     <height>25</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>

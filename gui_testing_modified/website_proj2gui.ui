@@ -42,7 +42,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 15pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);
 background-color: rgb(186, 23, 23);</string>
     </property>
@@ -78,7 +78,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 13pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 11pt &quot;Segoe UI&quot;;
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
     </property>
@@ -89,8 +89,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="emailLabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>330</y>
+      <x>10</x>
+      <y>470</y>
       <width>231</width>
       <height>81</height>
      </rect>
@@ -107,8 +107,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="contactLabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>240</y>
+      <x>10</x>
+      <y>400</y>
       <width>341</width>
       <height>81</height>
      </rect>
@@ -125,8 +125,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="phone_label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>440</y>
+      <x>10</x>
+      <y>560</y>
       <width>271</width>
       <height>81</height>
      </rect>
@@ -170,6 +170,7 @@ color: rgb(255, 255, 255);</string>
      <property name="font">
       <font>
        <pointsize>36</pointsize>
+       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -191,7 +192,7 @@ color: rgb(255, 255, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>573</width>
-     <height>25</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>

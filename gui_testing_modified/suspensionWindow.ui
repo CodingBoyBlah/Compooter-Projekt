@@ -56,14 +56,14 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>90</y>
+      <y>120</y>
       <width>861</width>
-      <height>101</height>
+      <height>131</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">
-font: 700 16pt &quot;Segoe UI&quot;;
+font: 700 14pt &quot;Segoe UI&quot;;
 </string>
     </property>
     <property name="text">
@@ -75,13 +75,13 @@ controlled, and efficient driving experience.</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>190</y>
+      <y>270</y>
       <width>191</width>
       <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 13pt &quot;Segoe UI&quot;;
 
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
@@ -94,13 +94,13 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>190</y>
+      <y>270</y>
       <width>191</width>
       <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 16pt &quot;Segoe UI&quot;;
 
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
@@ -113,7 +113,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>290</y>
+      <y>370</y>
       <width>191</width>
       <height>71</height>
      </rect>
@@ -132,13 +132,13 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>290</y>
+      <y>370</y>
       <width>191</width>
       <height>71</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 18pt &quot;Segoe UI&quot;;
+     <string notr="true">font: 17pt &quot;Segoe UI&quot;;
 
 background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
@@ -154,7 +154,7 @@ color: rgb(255, 255, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>858</width>
-     <height>25</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>
