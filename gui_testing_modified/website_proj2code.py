@@ -48,6 +48,4 @@ class UI(QMainWindow):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_windowSuspension()
 
-app = QApplication(sys.argv)
-UIWindow = UI()
-app.exec_()
+
