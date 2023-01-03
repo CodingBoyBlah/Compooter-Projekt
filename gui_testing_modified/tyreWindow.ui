@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>943</width>
-    <height>626</height>
+    <width>872</width>
+    <height>704</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>-120</x>
-      <y>-40</y>
+      <x>-100</x>
+      <y>10</y>
       <width>1101</width>
       <height>701</height>
      </rect>
@@ -57,34 +57,7 @@ background-color: rgb(186, 23, 23);
 color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>Front Wheels</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="geometry">
-      <rect>
-       <x>390</x>
-       <y>250</y>
-       <width>191</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Segoe UI</family>
-       <pointsize>16</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 16pt &quot;Segoe UI&quot;;
-background-color: rgb(186, 23, 23);
-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>Rear Wheels</string>
+      <string>Rims</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
@@ -118,7 +91,7 @@ font: 700 20pt &quot;Segoe UI&quot;;
 </string>
      </property>
      <property name="text">
-      <string>Wheels:</string>
+      <string>Rims</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">
@@ -134,7 +107,7 @@ font: 700 20pt &quot;Segoe UI&quot;;
       <string notr="true">font: 18pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
-      <string>Wheels are the ones on which the car runs.</string>
+      <string>Rims are the supporting circular objects on which a car runs</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -257,8 +230,8 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>943</width>
-     <height>18</height>
+     <width>872</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
