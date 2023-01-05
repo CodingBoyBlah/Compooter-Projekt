@@ -30,6 +30,8 @@ class loginUI_(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self.window)
         self.window.show()
+        self.close()
+
 
 
 

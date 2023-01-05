@@ -35,17 +35,21 @@ class UI(QMainWindow):
     def openTyreWindow(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_windowTyre()
+        self.close()
 
     def openSteeringWindow(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_windowSteering()
+        self.close()
 
     def openEngineWindow(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_windowEngine()
+        self.close()
 
     def openSuspensionWindow(self):
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_windowSuspension()
+        self.close()
 
 
