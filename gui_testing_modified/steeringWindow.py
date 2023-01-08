@@ -13,11 +13,11 @@ class Ui_windowSteering(QMainWindow):
         uic.loadUi('steeringWindow.ui',self)
 
         self.backButton = self.findChild(QPushButton, 'backButton')
-        #self.steeringWheelButton = self.findChild(QPushButton,'steeringWheelButton')
+        self.steeringWheelButton = self.findChild(QPushButton,'steeringWheelButton')
 
 
         self.backButton.clicked.connect(self.showUI)
-        #self.steeringWheelButton.clicked.connect(self.showSteering)
+        self.steeringWheelButton.clicked.connect(self.showSteering)
 
 
         self.show()
@@ -28,10 +28,10 @@ class Ui_windowSteering(QMainWindow):
         self.ui = UI()
         self.ui.show()
 
-    '''def showSteering(self):
-        from radialWindow_Code import Ui_radialWindow
+    def showSteering(self):
+        from steeringProductWindow_Code import Ui_steeringProductWin
         self.close()
-        self.ui = Ui_radialWindow()
-        self.ui.show()'''
+        self.ui = Ui_steeringProductWin()
+        self.ui.show()
 
 
