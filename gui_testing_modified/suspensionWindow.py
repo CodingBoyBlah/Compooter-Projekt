@@ -12,6 +12,15 @@ class Ui_windowSuspension(QMainWindow):
         # Load the ui file
         uic.loadUi('suspensionWindow.ui',self)
 
+        self.backButton = self.findChild(QPushButton, 'backButton')
+        self.backButton.clicked.connect(self.showUI)
+
         self.show()
+
+    def showUI(self):
+        from website_proj2code import UI
+        self.close()
+        self.ui = UI()
+        self.ui.show()
 
 

@@ -12,6 +12,15 @@ class Ui_windowEngine(QMainWindow):
         # Load the ui file
         uic.loadUi('engineWindow.ui',self)
 
+        self.backButton = self.findChild(QPushButton, 'backButton')
+        self.backButton.clicked.connect(self.showUI)
+
         self.show()
+
+    def showUI(self):
+        from website_proj2code import UI
+        self.close()
+        self.ui = UI()
+        self.ui.show()
 
 

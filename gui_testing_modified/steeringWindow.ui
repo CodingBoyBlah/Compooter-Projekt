@@ -77,7 +77,7 @@ color: rgb(255, 255, 255);</string>
      <string>A steering system controls the movement of the tyre.</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="steeringWheelButton">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -94,6 +94,26 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Steering wheels</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
     </property>
    </widget>
   </widget>

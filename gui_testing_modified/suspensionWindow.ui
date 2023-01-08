@@ -75,7 +75,7 @@ controlled, and efficient driving experience.</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>270</y>
+      <y>250</y>
       <width>191</width>
       <height>71</height>
      </rect>
@@ -94,7 +94,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>270</y>
+      <y>250</y>
       <width>191</width>
       <height>71</height>
      </rect>
@@ -113,7 +113,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>370</y>
+      <y>350</y>
       <width>191</width>
       <height>71</height>
      </rect>
@@ -132,7 +132,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>370</y>
+      <y>350</y>
       <width>191</width>
       <height>71</height>
      </rect>
@@ -145,6 +145,26 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Coil Spring</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backButton">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>400</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
     </property>
    </widget>
   </widget>

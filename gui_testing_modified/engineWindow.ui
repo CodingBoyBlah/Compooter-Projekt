@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
+    <width>900</width>
     <height>500</height>
    </rect>
   </property>
@@ -38,7 +38,7 @@ background-color: rgb(186, 23, 23);</string>
       <rect>
        <x>30</x>
        <y>20</y>
-       <width>571</width>
+       <width>881</width>
        <height>91</height>
       </rect>
      </property>
@@ -57,8 +57,8 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>40</x>
       <y>170</y>
-      <width>191</width>
-      <height>71</height>
+      <width>221</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -74,10 +74,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>340</x>
       <y>170</y>
-      <width>191</width>
-      <height>71</height>
+      <width>221</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -93,10 +93,10 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>640</x>
       <y>170</y>
-      <width>191</width>
-      <height>71</height>
+      <width>221</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -115,7 +115,7 @@ color: rgb(255, 255, 255);
      <rect>
       <x>10</x>
       <y>100</y>
-      <width>681</width>
+      <width>881</width>
       <height>61</height>
      </rect>
     </property>
@@ -128,14 +128,34 @@ font: 700 15pt &quot;Segoe UI&quot;;
      <string>Engine can be percieved as the powerhouse of a car.</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="backButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>400</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>700</width>
-     <height>26</height>
+     <width>900</width>
+     <height>18</height>
     </rect>
    </property>
   </widget>

@@ -32,7 +32,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="rimsButton">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -65,12 +65,12 @@ color: rgb(255, 255, 255);</string>
       <rect>
        <x>160</x>
        <y>360</y>
-       <width>811</width>
+       <width>900</width>
        <height>81</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 18pt &quot;Segoe UI&quot;;</string>
+      <string notr="true">font: 15pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
       <string>A tyre is the one which ultimately supports and runs the car.</string>
@@ -104,10 +104,10 @@ font: 700 20pt &quot;Segoe UI&quot;;
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 18pt &quot;Segoe UI&quot;;</string>
+      <string notr="true">font: 15pt &quot;Segoe UI&quot;;</string>
      </property>
      <property name="text">
-      <string>Rims are the supporting circular objects on which a car runs</string>
+      <string>Rims are the supporting circular objects on which a car runs.</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -128,7 +128,7 @@ font: 700 20pt &quot;Segoe UI&quot;;
       <string>Tyres:</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="offroadButton">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -147,7 +147,7 @@ color: rgb(255, 255, 255);</string>
       <string>Offroad Tyres</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="sportsButton">
      <property name="geometry">
       <rect>
        <x>390</x>
@@ -166,7 +166,7 @@ color: rgb(255, 255, 255);</string>
       <string>Sports Tyres</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="radialButton">
      <property name="geometry">
       <rect>
        <x>620</x>
@@ -233,8 +233,7 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">
-</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string/>
