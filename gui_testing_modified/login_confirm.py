@@ -9,15 +9,9 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from website_proj2code import UI
+
 
 class Ui_MainWindow(object):
-    def openWindow(self):
-        self.window = QtWidgets.QMainWindow()
-        self.ui = UI()
-
-
-
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(200, 200)
@@ -30,7 +24,7 @@ class Ui_MainWindow(object):
         self.label.setFont(font)
         self.label.setWordWrap(False)
         self.label.setObjectName("label")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget, clicked=lambda: self.openWindow())
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(10, 120, 91, 41))
         font = QtGui.QFont()
         font.setPointSize(11)

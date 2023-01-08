@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QPushButton, QLineEdit
 from PyQt5 import QtWidgets
 from PyQt5 import uic
-from login_confirm import Ui_MainWindow
+
 import sys
 
 class loginUI_(QMainWindow):
@@ -20,17 +20,19 @@ class loginUI_(QMainWindow):
         self.enterButton = self.findChild(QPushButton, 'enterButton')
         self.imagebgLabel = self.findChild(QLabel, 'imagebgLabel')
 
+        # Masking the password
+        self.passLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
+
         # When button pressed, open main window
         self.enterButton.clicked.connect(self.openConfirmWindow)
 
         self.show()
 
     def openConfirmWindow(self):
-        self.window = QtWidgets.QMainWindow()
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self.window)
-        self.window.show()
+        from login_confirmCode import loginConfirm
         self.close()
+        self.ui = loginConfirm()
+        self.ui.show()
 
 
 
