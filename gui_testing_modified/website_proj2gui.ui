@@ -91,17 +91,18 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>10</x>
       <y>470</y>
-      <width>231</width>
+      <width>591</width>
       <height>81</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Impact</family>
       <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Email: </string>
+     <string>Email: torquecart123@gmail.com</string>
     </property>
    </widget>
    <widget class="QLabel" name="contactLabel">
@@ -115,6 +116,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
+      <family>Impact</family>
       <pointsize>26</pointsize>
      </font>
     </property>
@@ -127,17 +129,18 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>10</x>
       <y>540</y>
-      <width>271</width>
+      <width>441</width>
       <height>81</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Impact</family>
       <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Phone:</string>
+     <string>Phone: +91 1234567890</string>
     </property>
    </widget>
    <widget class="QFrame" name="frame">
@@ -216,7 +219,7 @@ color: rgb(255, 255, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>610</width>
-     <height>26</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>
