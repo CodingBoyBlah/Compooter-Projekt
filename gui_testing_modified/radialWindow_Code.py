@@ -16,10 +16,10 @@ class Ui_radialWindow(QMainWindow):
         self.backButton.clicked.connect(self.showUI)
 
         self.buyButton1 = self.findChild(QPushButton, 'buyButton1')
-        self.buyButton1.clicked.connect(lambda: self.showBuyWindow())
+        self.buyButton1.clicked.connect(lambda: self.showBuyWindow('CEAT ProRadia','INR 82,000'))
 
         self.buyButton2 = self.findChild(QPushButton, 'buyButton1_2')
-        self.buyButton2.clicked.connect(lambda: self.showBuyWindow())
+        self.buyButton2.clicked.connect(lambda: self.showBuyWindow('Bridgestone Turanza','INR 92,000'))
 
 
         self.show()
@@ -30,10 +30,10 @@ class Ui_radialWindow(QMainWindow):
         self.ui = Ui_windowTyre()
         self.ui.show()
 
-    def showBuyWindow(self):
+    def showBuyWindow(self, product_name, cost):
         from buyConfirmWindow_Code import Ui_BuyConfirmWindow
         self.close()
-        self.ui = Ui_BuyConfirmWindow()
+        self.ui = Ui_BuyConfirmWindow(product_name,cost)
         self.ui.show()
 
 
