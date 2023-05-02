@@ -173,9 +173,9 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="main_header_name">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>0</x>
       <y>20</y>
-      <width>1081</width>
+      <width>1101</width>
       <height>111</height>
      </rect>
     </property>
