@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>windowEngine</class>
+ <widget class="QMainWindow" name="windowEngine">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1196</width>
+    <height>833</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Engine Window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="v8">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>290</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt  &quot;ROG Fonts&quot;;
+background-color: rgb(221, 221, 221);
+color: rgb(0,0,0);
+</string>
+    </property>
+    <property name="text">
+     <string>v8</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-120</x>
+      <y>-20</y>
+      <width>1541</width>
+      <height>831</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Downloads/torqucart.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>70</y>
+      <width>841</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(191, 191, 191);
+font: 42pt &quot;ROG Fonts&quot;;</string>
+    </property>
+    <property name="text">
+     <string>ENGINE TYPES</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="v10">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>510</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt  &quot;ROG Fonts&quot;;
+background-color: rgb(221, 221, 221);
+color: rgb(0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>v10</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="flat6">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>400</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt  &quot;ROG Fonts&quot;;
+background-color: rgb(221, 221, 221);
+color: rgb(0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>flat 6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>650</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>back</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../Downloads/back-undo-return-button-png-5.png</normaloff>../Downloads/back-undo-return-button-png-5.png</iconset>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>v8</zorder>
+   <zorder>label_2</zorder>
+   <zorder>v10</zorder>
+   <zorder>flat6</zorder>
+   <zorder>back</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1196</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

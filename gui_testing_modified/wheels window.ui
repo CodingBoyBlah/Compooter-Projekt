@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>windowTyre</class>
+ <widget class="QMainWindow" name="windowTyre">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1225</width>
+    <height>816</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tyre Window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-100</x>
+      <y>0</y>
+      <width>1331</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>-40</x>
+       <y>-20</y>
+       <width>1541</width>
+       <height>831</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../../../../linet/Downloads/torqucart.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>60</y>
+       <width>931</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(191, 191, 191);
+font: 42pt &quot;ROG Fonts&quot;;</string>
+     </property>
+     <property name="text">
+      <string>wheels and tyres</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rims">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>240</y>
+       <width>371</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt  &quot;ROG Fonts&quot;;
+background-color: rgb(221, 221, 221);
+color: rgb(0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>RIMS</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="track">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>340</y>
+       <width>371</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt  &quot;ROG Fonts&quot;;
+background-color: rgb(221, 221, 221);
+color: rgb(0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>TRACK TYRES</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="offroad">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>440</y>
+       <width>371</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt  &quot;ROG Fonts&quot;;
+background-color: rgb(221, 221, 221);
+color: rgb(0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>OFFROAD TYRES</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="street">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>540</y>
+       <width>371</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt  &quot;ROG Fonts&quot;;
+background-color: rgb(221, 221, 221);
+color: rgb(0,0,0);
+</string>
+     </property>
+     <property name="text">
+      <string>STREET TYRES</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back">
+     <property name="geometry">
+      <rect>
+       <x>1150</x>
+       <y>670</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>back</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1225</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
