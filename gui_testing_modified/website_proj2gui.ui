@@ -181,17 +181,19 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="font">
      <font>
-      <family>Moonglade DEMO</family>
-      <pointsize>36</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>ROG Fonts</family>
+      <pointsize>42</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 42pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="text">
-     <string>T O R Q U E      C A R T</string>
+     <string>TOrque cart</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
