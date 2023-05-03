@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>torqucart.jpg</pixmap>
+     <pixmap>../OneDrive/Documents/GitHub/Compooter-Projekt/gui_testing_modified/torqucart.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -89,22 +89,13 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>890</x>
-      <y>200</y>
-      <width>231</width>
-      <height>131</height>
+      <y>220</y>
+      <width>201</width>
+      <height>121</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Oswald SemiBold</family>
-      <pointsize>22</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">font: 22pt &quot;Oswald SemiBold&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>ADD</string>
@@ -119,7 +110,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <rect>
       <x>130</x>
       <y>190</y>
-      <width>151</width>
+      <width>171</width>
       <height>151</height>
      </rect>
     </property>
@@ -128,16 +119,10 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
 font: 15pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>pirelli_pzeo.jpg</pixmap>
+     <string>PIC 1</string>
     </property>
     <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -150,12 +135,51 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(225, 225, 225);
-font: 9pt &quot;MS Shell Dlg 2&quot;;
-</string>
+     <string notr="true">color: rgb(191, 191, 191);
+font: 15pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;MICHELIN Pilot Sport Cup 2R (Set of 4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Make - Michelin&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Model - Pilot SportCup 2R&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Cost - INR &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;M ICHELIN CupSport 3 (Set of 4)&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Make - Michelin&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Model - CupSport 3&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Cost - INR &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SignIN_2">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>370</y>
+      <width>201</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>ADD</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../Downloads/back-undo-return-button-png-5.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>340</y>
+      <width>281</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(191, 191, 191);
+font: 15pt &quot;ROG Fonts&quot;;</string>
+    </property>
+    <property name="text">
+     <string>PIC 1</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -171,65 +195,27 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(225, 225, 225);
-font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
+     <string notr="true">color: rgb(191, 191, 191);
+font: 15pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;DUNLOP SP SPORT MAXX (Set of 4)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Make - Dunlop&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Model - Sport Maxx&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Cost - INR &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;PIRELLI DIABLO CORSE (Set of 4)&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Make - Pirelli&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Model - Diablo Corse&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Cost - INR &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_2">
-    <property name="geometry">
-     <rect>
-      <x>890</x>
-      <y>390</y>
-      <width>231</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Oswald SemiBold</family>
-      <pointsize>22</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 22pt &quot;Oswald SemiBold&quot;;</string>
-    </property>
-    <property name="text">
-     <string>ADD</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../Downloads/back-undo-return-button-png-5.png</iconset>
-    </property>
-   </widget>
    <widget class="QPushButton" name="SignIN_3">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>560</y>
-      <width>231</width>
-      <height>131</height>
+      <x>890</x>
+      <y>510</y>
+      <width>201</width>
+      <height>121</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Oswald SemiBold</family>
-      <pointsize>22</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
     <property name="styleSheet">
-     <string notr="true">font: 22pt &quot;Oswald SemiBold&quot;;</string>
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>ADD</string>
@@ -237,84 +223,26 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="icon">
      <iconset>
       <normaloff>../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../Downloads/back-undo-return-button-png-5.png</iconset>
-    </property>
-   </widget>
-   <widget class="Line" name="line">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>350</y>
-      <width>1061</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_2">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>530</y>
-      <width>1061</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>370</y>
-      <width>151</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(225, 225, 225);
-font: 15pt &quot;ROG Fonts&quot;;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>michelin_pilot.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>550</y>
-      <width>151</width>
-      <height>151</height>
+      <x>160</x>
+      <y>490</y>
+      <width>281</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(225, 225, 225);
+     <string notr="true">color: rgb(191, 191, 191);
 font: 15pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>dunlop_sport.jpg</pixmap>
+     <string>PIC 1</string>
     </property>
     <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
