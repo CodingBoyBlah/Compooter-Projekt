@@ -59,7 +59,7 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>470</x>
       <y>170</y>
       <width>321</width>
       <height>151</height>
@@ -91,7 +91,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN">
     <property name="geometry">
      <rect>
-      <x>1010</x>
+      <x>910</x>
       <y>180</y>
       <width>231</width>
       <height>131</height>
@@ -120,8 +120,8 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>170</y>
+      <x>240</x>
+      <y>180</y>
       <width>151</width>
       <height>151</height>
      </rect>
@@ -146,8 +146,8 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>380</y>
+      <x>470</x>
+      <y>370</y>
       <width>311</width>
       <height>151</height>
      </rect>
@@ -167,7 +167,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>470</x>
       <y>570</y>
       <width>341</width>
       <height>151</height>
@@ -187,8 +187,8 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN_2">
     <property name="geometry">
      <rect>
-      <x>1010</x>
-      <y>390</y>
+      <x>910</x>
+      <y>380</y>
       <width>231</width>
       <height>131</height>
      </rect>
@@ -216,8 +216,8 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN_3">
     <property name="geometry">
      <rect>
-      <x>1010</x>
-      <y>580</y>
+      <x>910</x>
+      <y>590</y>
       <width>231</width>
       <height>131</height>
      </rect>
@@ -245,10 +245,10 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>140</x>
       <y>340</y>
-      <width>1151</width>
-      <height>16</height>
+      <width>1051</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="orientation">
@@ -258,10 +258,10 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="Line" name="line_2">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>150</x>
       <y>540</y>
-      <width>1151</width>
-      <height>16</height>
+      <width>1031</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="orientation">
@@ -271,7 +271,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>240</x>
       <y>370</y>
       <width>151</width>
       <height>151</height>
@@ -297,8 +297,8 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>580</y>
+      <x>240</x>
+      <y>570</y>
       <width>151</width>
       <height>151</height>
      </rect>
@@ -318,69 +318,6 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>780</x>
-      <y>190</y>
-      <width>201</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(225, 225, 225);
-font: 9pt &quot;MS Shell Dlg 2&quot;;
-</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;QTY IN STOCK : 150&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="scaledContents">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>780</x>
-      <y>390</y>
-      <width>201</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(225, 225, 225);
-font: 9pt &quot;MS Shell Dlg 2&quot;;
-</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;QTY IN STOCK : 80&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="scaledContents">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_12">
-    <property name="geometry">
-     <rect>
-      <x>780</x>
-      <y>580</y>
-      <width>201</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(225, 225, 225);
-font: 9pt &quot;MS Shell Dlg 2&quot;;
-</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;QTY IN STOCK : 70&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="scaledContents">
-     <bool>false</bool>
     </property>
    </widget>
   </widget>
