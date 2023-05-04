@@ -46,7 +46,7 @@ color: rgb(0,0,0);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>Downloads/torqucart.jpg</pixmap>
+     <pixmap>torqucart.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

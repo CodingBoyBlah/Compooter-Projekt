@@ -35,8 +35,8 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>-20</x>
-       <y>-40</y>
+       <x>-10</x>
+       <y>-20</y>
        <width>1541</width>
        <height>851</height>
       </rect>
@@ -45,7 +45,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../../linet/Downloads/torqucart.jpg</pixmap>
+      <pixmap>torqucart.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -54,9 +54,9 @@
     <widget class="QPushButton" name="rims">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>240</y>
-       <width>371</width>
+       <x>550</x>
+       <y>260</y>
+       <width>391</width>
        <height>71</height>
       </rect>
      </property>
@@ -73,9 +73,9 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="track">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>340</y>
-       <width>371</width>
+       <x>550</x>
+       <y>370</y>
+       <width>391</width>
        <height>71</height>
       </rect>
      </property>
@@ -92,9 +92,9 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="offroad">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>440</y>
-       <width>371</width>
+       <x>550</x>
+       <y>480</y>
+       <width>391</width>
        <height>71</height>
       </rect>
      </property>
@@ -120,8 +120,8 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="back">
      <property name="geometry">
       <rect>
-       <x>1150</x>
-       <y>670</y>
+       <x>1050</x>
+       <y>640</y>
        <width>111</width>
        <height>41</height>
       </rect>
@@ -140,15 +140,15 @@ color: rgb(0,0,0);
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>460</x>
-       <y>70</y>
+       <x>470</x>
+       <y>90</y>
        <width>571</width>
        <height>111</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Asus Rog</family>
+       <family>ROG Fonts</family>
        <pointsize>42</pointsize>
        <weight>50</weight>
        <italic>false</italic>
@@ -157,7 +157,7 @@ color: rgb(0,0,0);
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(191, 191, 191);
-font: 42pt &quot;Asus Rog&quot;;</string>
+font: 42pt &quot;ROG Fonts&quot;;</string>
      </property>
      <property name="text">
       <string>SUSPENSION</string>

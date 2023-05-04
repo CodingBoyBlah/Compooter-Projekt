@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1411</width>
+    <width>1219</width>
     <height>801</height>
    </rect>
   </property>
@@ -32,31 +32,12 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>-100</x>
-       <y>-60</y>
-       <width>1401</width>
-       <height>851</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../../../../linet/Downloads/torqucart.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
     <widget class="QPushButton" name="rims">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>230</y>
-       <width>371</width>
+       <x>500</x>
+       <y>280</y>
+       <width>421</width>
        <height>71</height>
       </rect>
      </property>
@@ -73,9 +54,9 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="track">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>350</y>
-       <width>371</width>
+       <x>500</x>
+       <y>380</y>
+       <width>421</width>
        <height>71</height>
       </rect>
      </property>
@@ -92,8 +73,8 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="back">
      <property name="geometry">
       <rect>
-       <x>1150</x>
-       <y>670</y>
+       <x>1110</x>
+       <y>660</y>
        <width>111</width>
        <height>41</height>
       </rect>
@@ -107,32 +88,6 @@ color: rgb(0,0,0);
      <property name="icon">
       <iconset>
        <normaloff>../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../Downloads/back-undo-return-button-png-5.png</iconset>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>610</x>
-       <y>80</y>
-       <width>511</width>
-       <height>131</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Asus Rog</family>
-       <pointsize>42</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(191, 191, 191);
-font: 42pt &quot;Asus Rog&quot;;</string>
-     </property>
-     <property name="text">
-      <string>EXHAUSTS</string>
      </property>
     </widget>
     <widget class="QPushButton" name="offroad">
@@ -193,8 +148,8 @@ color: rgb(0,0,0);
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>-50</y>
+       <x>-10</x>
+       <y>-20</y>
        <width>1541</width>
        <height>831</height>
       </rect>
@@ -203,26 +158,7 @@ color: rgb(0,0,0);
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../OneDrive/Documents/GitHub/Compooter-Projekt/gui_testing_modified/torqucart.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>840</x>
-       <y>500</y>
-       <width>1421</width>
-       <height>861</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../../../../linet/Downloads/torqucart.jpg</pixmap>
+      <pixmap>torqucart.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -231,9 +167,9 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>470</y>
-       <width>371</width>
+       <x>500</x>
+       <y>480</y>
+       <width>421</width>
        <height>71</height>
       </rect>
      </property>
@@ -246,16 +182,40 @@ color: rgb(0,0,0);</string>
       <string>FACTORY EXHAUSTS</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>80</y>
+       <width>511</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>ROG Fonts</family>
+       <pointsize>42</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(191, 191, 191);
+font: 42pt &quot;ROG Fonts&quot;;</string>
+     </property>
+     <property name="text">
+      <string>EXHAUSTS</string>
+     </property>
+    </widget>
     <zorder>label_4</zorder>
-    <zorder>label</zorder>
     <zorder>rims</zorder>
     <zorder>track</zorder>
     <zorder>back</zorder>
-    <zorder>label_2</zorder>
     <zorder>offroad</zorder>
     <zorder>label_3</zorder>
-    <zorder>label_5</zorder>
     <zorder>pushButton</zorder>
+    <zorder>label_2</zorder>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -263,7 +223,7 @@ color: rgb(0,0,0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1411</width>
+     <width>1219</width>
      <height>26</height>
     </rect>
    </property>

@@ -54,8 +54,8 @@
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>60</y>
+       <x>450</x>
+       <y>80</y>
        <width>931</width>
        <height>121</height>
       </rect>
@@ -65,36 +65,17 @@
 font: 42pt &quot;ROG Fonts&quot;;</string>
      </property>
      <property name="text">
-      <string>wheels and tyres</string>
+      <string>TYRE TYPES</string>
      </property>
      <property name="scaledContents">
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="rims">
-     <property name="geometry">
-      <rect>
-       <x>570</x>
-       <y>240</y>
-       <width>371</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 15pt  &quot;ROG Fonts&quot;;
-background-color: rgb(221, 221, 221);
-color: rgb(0,0,0);
-</string>
-     </property>
-     <property name="text">
-      <string>RIMS</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="track">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>340</y>
+       <x>560</x>
+       <y>280</y>
        <width>371</width>
        <height>71</height>
       </rect>
@@ -112,8 +93,8 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="offroad">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>440</y>
+       <x>560</x>
+       <y>380</y>
        <width>371</width>
        <height>71</height>
       </rect>
@@ -131,8 +112,8 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="street">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>540</y>
+       <x>560</x>
+       <y>490</y>
        <width>371</width>
        <height>71</height>
       </rect>

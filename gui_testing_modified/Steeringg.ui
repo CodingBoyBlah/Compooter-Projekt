@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1225</width>
-    <height>816</height>
+    <height>784</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -45,7 +45,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../../linet/Downloads/torqucart.jpg</pixmap>
+      <pixmap>torqucart.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -54,9 +54,9 @@
     <widget class="QPushButton" name="rims">
      <property name="geometry">
       <rect>
-       <x>570</x>
+       <x>480</x>
        <y>240</y>
-       <width>371</width>
+       <width>461</width>
        <height>71</height>
       </rect>
      </property>
@@ -73,9 +73,9 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="track">
      <property name="geometry">
       <rect>
-       <x>570</x>
+       <x>480</x>
        <y>340</y>
-       <width>371</width>
+       <width>461</width>
        <height>71</height>
       </rect>
      </property>
@@ -92,9 +92,9 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="offroad">
      <property name="geometry">
       <rect>
-       <x>570</x>
+       <x>480</x>
        <y>440</y>
-       <width>371</width>
+       <width>461</width>
        <height>71</height>
       </rect>
      </property>
@@ -122,8 +122,8 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="back">
      <property name="geometry">
       <rect>
-       <x>1150</x>
-       <y>670</y>
+       <x>1090</x>
+       <y>620</y>
        <width>111</width>
        <height>41</height>
       </rect>
@@ -142,15 +142,15 @@ color: rgb(0,0,0);
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>530</x>
-       <y>60</y>
-       <width>471</width>
+       <x>350</x>
+       <y>80</y>
+       <width>801</width>
        <height>111</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Asus Rog</family>
+       <family>ROG Fonts</family>
        <pointsize>42</pointsize>
        <weight>50</weight>
        <italic>false</italic>
@@ -159,10 +159,11 @@ color: rgb(0,0,0);
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(191, 191, 191);
-font: 42pt &quot;Asus Rog&quot;;</string>
+font: 42pt &quot;ROG Fonts&quot;;
+</string>
      </property>
      <property name="text">
-      <string>STEERING</string>
+      <string>STEERING TYPES</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
