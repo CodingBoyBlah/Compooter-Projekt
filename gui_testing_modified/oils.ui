@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1225</width>
+    <width>1200</width>
     <height>816</height>
    </rect>
   </property>
@@ -35,9 +35,9 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>-260</x>
-       <y>-50</y>
-       <width>1541</width>
+       <x>20</x>
+       <y>-30</y>
+       <width>1461</width>
        <height>851</height>
       </rect>
      </property>
@@ -45,7 +45,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>&quot;C:/Users/riyas/Downloads/CodingBoyBlah Compooter-Projekt 3b0ed981af19f4800ed51b8298a2cf63b9c18aca gui_testing_modified/carimg.jpg&quot;</pixmap>
+      <pixmap>torqucart.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -55,7 +55,7 @@
      <property name="geometry">
       <rect>
        <x>570</x>
-       <y>240</y>
+       <y>280</y>
        <width>371</width>
        <height>71</height>
       </rect>
@@ -73,8 +73,8 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="track">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>340</y>
+       <x>580</x>
+       <y>400</y>
        <width>371</width>
        <height>71</height>
       </rect>
@@ -92,8 +92,8 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="offroad">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>440</y>
+       <x>580</x>
+       <y>520</y>
        <width>371</width>
        <height>71</height>
       </rect>
@@ -122,8 +122,8 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="back">
      <property name="geometry">
       <rect>
-       <x>1150</x>
-       <y>670</y>
+       <x>1060</x>
+       <y>680</y>
        <width>111</width>
        <height>41</height>
       </rect>
@@ -137,32 +137,6 @@ color: rgb(0,0,0);
      <property name="icon">
       <iconset>
        <normaloff>../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../Downloads/back-undo-return-button-png-5.png</iconset>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>630</x>
-       <y>70</y>
-       <width>221</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Asus Rog</family>
-       <pointsize>42</pointsize>
-       <weight>50</weight>
-       <italic>false</italic>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: rgb(191, 191, 191);
-font: 42pt &quot;Asus Rog&quot;;</string>
-     </property>
-     <property name="text">
-      <string>OILS</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -184,6 +158,32 @@ font: 42pt &quot;Asus Rog&quot;;</string>
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>70</y>
+       <width>511</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>ROG Fonts</family>
+       <pointsize>42</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(191, 191, 191);
+font: 42pt &quot;ROG Fonts&quot;;</string>
+     </property>
+     <property name="text">
+      <string>OILS</string>
+     </property>
+    </widget>
     <zorder>label_3</zorder>
     <zorder>label</zorder>
     <zorder>rims</zorder>
@@ -198,7 +198,7 @@ font: 42pt &quot;Asus Rog&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1225</width>
+     <width>1200</width>
      <height>26</height>
     </rect>
    </property>

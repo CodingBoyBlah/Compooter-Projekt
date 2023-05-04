@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1207</width>
-    <height>793</height>
+    <width>1169</width>
+    <height>798</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>-160</x>
+      <x>-170</x>
       <y>-40</y>
       <width>1541</width>
       <height>831</height>
@@ -36,8 +36,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
+      <x>-30</x>
+      <y>20</y>
       <width>1191</width>
       <height>121</height>
      </rect>
@@ -59,9 +59,9 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>330</x>
       <y>190</y>
-      <width>541</width>
+      <width>261</width>
       <height>151</height>
      </rect>
     </property>
@@ -91,7 +91,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN">
     <property name="geometry">
      <rect>
-      <x>900</x>
+      <x>740</x>
       <y>200</y>
       <width>231</width>
       <height>131</height>
@@ -117,38 +117,12 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
       <normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>190</y>
-      <width>151</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(225, 225, 225);
-font: 15pt &quot;ROG Fonts&quot;;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>pirelli_pzeo.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
       <x>330</x>
       <y>370</y>
-      <width>531</width>
+      <width>271</width>
       <height>151</height>
      </rect>
     </property>
@@ -167,9 +141,9 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>340</x>
       <y>550</y>
-      <width>541</width>
+      <width>251</width>
       <height>151</height>
      </rect>
     </property>
@@ -187,8 +161,8 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN_2">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>390</y>
+      <x>740</x>
+      <y>380</y>
       <width>231</width>
       <height>131</height>
      </rect>
@@ -216,7 +190,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN_3">
     <property name="geometry">
      <rect>
-      <x>900</x>
+      <x>740</x>
       <y>560</y>
       <width>231</width>
       <height>131</height>
@@ -247,7 +221,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <rect>
       <x>100</x>
       <y>350</y>
-      <width>1061</width>
+      <width>921</width>
       <height>16</height>
      </rect>
     </property>
@@ -260,7 +234,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <rect>
       <x>90</x>
       <y>530</y>
-      <width>1061</width>
+      <width>941</width>
       <height>16</height>
      </rect>
     </property>
@@ -285,7 +259,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>michelin_pilot.jpg</pixmap>
+     <pixmap>turanza.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -311,7 +285,33 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>dunlop_sport.jpg</pixmap>
+     <pixmap>amazer.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>190</y>
+      <width>151</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(225, 225, 225);
+font: 15pt &quot;ROG Fonts&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>fuelsmartt.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -326,7 +326,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1207</width>
+     <width>1169</width>
      <height>26</height>
     </rect>
    </property>

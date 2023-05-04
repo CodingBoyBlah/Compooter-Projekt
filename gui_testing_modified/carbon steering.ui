@@ -36,7 +36,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>40</x>
       <y>30</y>
       <width>1191</width>
       <height>121</height>
@@ -47,7 +47,7 @@
 font: 42pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="text">
-     <string>TRACK STEERING</string>
+     <string>CARBON STEERING</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -134,7 +134,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>pirelli_pzeo.jpg</pixmap>
+     <pixmap>BMW carbsteer mod.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -285,7 +285,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>michelin_pilot.jpg</pixmap>
+     <pixmap>audi steer.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -311,7 +311,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>dunlop_sport.jpg</pixmap>
+     <pixmap>merc steer moddd.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

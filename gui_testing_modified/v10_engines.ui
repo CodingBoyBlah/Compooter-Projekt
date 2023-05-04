@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1207</width>
-    <height>793</height>
+    <width>1249</width>
+    <height>820</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -134,7 +134,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>pirelli_pzeo.jpg</pixmap>
+     <pixmap>lambo v10.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -285,7 +285,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>michelin_pilot.jpg</pixmap>
+     <pixmap>audi v10.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -311,7 +311,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>dunlop_sport.jpg</pixmap>
+     <pixmap>porsche v10.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -326,7 +326,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1207</width>
+     <width>1249</width>
      <height>26</height>
     </rect>
    </property>

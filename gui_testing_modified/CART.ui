@@ -35,8 +35,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>60</y>
+     <x>530</x>
+     <y>50</y>
      <width>931</width>
      <height>121</height>
     </rect>
@@ -71,6 +71,168 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
     <iconset>
      <normaloff>../Downloads/back-undo-return-button-png-5.png</normaloff>../Downloads/back-undo-return-button-png-5.png</iconset>
    </property>
+  </widget>
+  <widget class="QTableWidget" name="ProductList">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>210</y>
+     <width>651</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+   </property>
+   <row>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>TYPE</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>SUBTYPE</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ITEM</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>QUANTITY</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>AMOUNT</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="textAlignment">
+     <set>AlignCenter</set>
+    </property>
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="0" column="3">
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item row="0" column="4">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="1" column="3">
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item row="1" column="4">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="2" column="0">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="2" column="2">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="2" column="3">
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item row="2" column="4">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="3" column="0">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="3" column="1">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="3" column="2">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
+   <item row="3" column="3">
+    <property name="flags">
+     <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+    </property>
+   </item>
+   <item row="3" column="4">
+    <property name="flags">
+     <set>NoItemFlags</set>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>

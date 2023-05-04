@@ -36,8 +36,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
+      <x>20</x>
+      <y>50</y>
       <width>1191</width>
       <height>121</height>
      </rect>
@@ -121,9 +121,9 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>190</y>
+      <y>200</y>
       <width>151</width>
-      <height>151</height>
+      <height>141</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -134,7 +134,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>pirelli_pzeo.jpg</pixmap>
+     <pixmap>spirax2.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -285,7 +285,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>michelin_pilot.jpg</pixmap>
+     <pixmap>bosch.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -311,7 +311,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>dunlop_sport.jpg</pixmap>
+     <pixmap>motul2.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

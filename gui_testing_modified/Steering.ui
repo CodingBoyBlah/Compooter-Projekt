@@ -35,17 +35,17 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>-100</x>
-       <y>-60</y>
-       <width>1401</width>
-       <height>851</height>
+       <x>80</x>
+       <y>0</y>
+       <width>1491</width>
+       <height>821</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../../linet/Downloads/torqucart.jpg</pixmap>
+      <pixmap>torqucart.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -54,9 +54,9 @@
     <widget class="QPushButton" name="rims">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>230</y>
-       <width>371</width>
+       <x>580</x>
+       <y>220</y>
+       <width>441</width>
        <height>71</height>
       </rect>
      </property>
@@ -73,9 +73,9 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="track">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>350</y>
-       <width>371</width>
+       <x>580</x>
+       <y>340</y>
+       <width>441</width>
        <height>71</height>
       </rect>
      </property>
@@ -112,15 +112,15 @@ color: rgb(0,0,0);
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>610</x>
-       <y>80</y>
+       <x>550</x>
+       <y>60</y>
        <width>511</width>
        <height>131</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Asus Rog</family>
+       <family>ROG Fonts</family>
        <pointsize>42</pointsize>
        <weight>50</weight>
        <italic>false</italic>
@@ -129,7 +129,7 @@ color: rgb(0,0,0);
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(191, 191, 191);
-font: 42pt &quot;Asus Rog&quot;;</string>
+font: 42pt &quot;ROG Fonts&quot;;</string>
      </property>
      <property name="text">
       <string>EXHAUSTS</string>
@@ -231,9 +231,9 @@ color: rgb(0,0,0);
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>680</x>
-       <y>470</y>
-       <width>371</width>
+       <x>580</x>
+       <y>460</y>
+       <width>441</width>
        <height>71</height>
       </rect>
      </property>

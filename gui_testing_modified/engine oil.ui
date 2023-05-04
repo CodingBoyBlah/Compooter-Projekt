@@ -134,7 +134,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>pirelli_pzeo.jpg</pixmap>
+     <pixmap>shell.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -285,7 +285,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>michelin_pilot.jpg</pixmap>
+     <pixmap>castrol.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -311,7 +311,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>dunlop_sport.jpg</pixmap>
+     <pixmap>gulf.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1207</width>
-    <height>793</height>
+    <width>1174</width>
+    <height>820</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>30</y>
       <width>1191</width>
       <height>121</height>
@@ -91,7 +91,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN">
     <property name="geometry">
      <rect>
-      <x>900</x>
+      <x>790</x>
       <y>200</y>
       <width>231</width>
       <height>131</height>
@@ -134,7 +134,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>pirelli_pzeo.jpg</pixmap>
+     <pixmap>sparco.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -187,8 +187,8 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN_2">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>390</y>
+      <x>790</x>
+      <y>380</y>
       <width>231</width>
       <height>131</height>
      </rect>
@@ -216,7 +216,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QPushButton" name="SignIN_3">
     <property name="geometry">
      <rect>
-      <x>900</x>
+      <x>790</x>
       <y>560</y>
       <width>231</width>
       <height>131</height>
@@ -247,7 +247,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <rect>
       <x>100</x>
       <y>350</y>
-      <width>1061</width>
+      <width>961</width>
       <height>16</height>
      </rect>
     </property>
@@ -260,7 +260,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <rect>
       <x>90</x>
       <y>530</y>
-      <width>1061</width>
+      <width>971</width>
       <height>16</height>
      </rect>
     </property>
@@ -285,7 +285,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>michelin_pilot.jpg</pixmap>
+     <pixmap>sparco 2.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -311,7 +311,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>dunlop_sport.jpg</pixmap>
+     <pixmap>recaro.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -326,7 +326,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1207</width>
+     <width>1174</width>
      <height>26</height>
     </rect>
    </property>
