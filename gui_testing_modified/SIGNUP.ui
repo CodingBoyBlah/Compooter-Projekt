@@ -69,7 +69,7 @@ font: 42pt &quot;Asus Rog&quot;;</string>
 font: 30pt &quot;ROG Fonts&quot;;</string>
    </property>
    <property name="text">
-    <string>LOG IN </string>
+    <string>SIGN UP</string>
    </property>
    <property name="scaledContents">
     <bool>false</bool>
@@ -78,51 +78,11 @@ font: 30pt &quot;ROG Fonts&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>370</y>
-     <width>211</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(225,225,225);
-font: 15pt &quot;ROG Fonts&quot;;</string>
-   </property>
-   <property name="text">
-    <string>User Type :</string>
-   </property>
-   <property name="scaledContents">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>450</y>
-     <width>211</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(225,225,225);
-font: 15pt &quot;ROG Fonts&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Email : </string>
-   </property>
-   <property name="scaledContents">
-    <bool>false</bool>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
      <x>270</x>
-     <y>530</y>
+     <y>600</y>
      <width>211</width>
      <height>41</height>
     </rect>
@@ -138,24 +98,11 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Email">
-   <property name="geometry">
-    <rect>
-     <x>500</x>
-     <y>450</y>
-     <width>391</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="Password">
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>530</y>
+     <y>600</y>
      <width>391</width>
      <height>41</height>
     </rect>
@@ -170,8 +117,8 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
   <widget class="QPushButton" name="SignIN">
    <property name="geometry">
     <rect>
-     <x>750</x>
-     <y>590</y>
+     <x>510</x>
+     <y>690</y>
      <width>131</width>
      <height>51</height>
     </rect>
@@ -180,55 +127,12 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
    <property name="text">
-    <string>Sign In</string>
+    <string>Sign Up!</string>
    </property>
    <property name="icon">
     <iconset>
      <normaloff>../Downloads/back-undo-return-button-png-5.png</normaloff>../Downloads/back-undo-return-button-png-5.png</iconset>
    </property>
-  </widget>
-  <widget class="QPushButton" name="Register">
-   <property name="geometry">
-    <rect>
-     <x>690</x>
-     <y>710</y>
-     <width>201</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Create New Account</string>
-   </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>../Downloads/back-undo-return-button-png-5.png</normaloff>../Downloads/back-undo-return-button-png-5.png</iconset>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="UserType">
-   <property name="geometry">
-    <rect>
-     <x>500</x>
-     <y>360</y>
-     <width>391</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
-   </property>
-   <item>
-    <property name="text">
-     <string>Customer</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>ADMIN</string>
-    </property>
-   </item>
   </widget>
   <widget class="Line" name="line">
    <property name="geometry">
@@ -246,8 +150,8 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>690</y>
+     <x>490</x>
+     <y>290</y>
      <width>441</width>
      <height>81</height>
     </rect>
@@ -257,23 +161,79 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
 font: 15pt &quot;Oswald SemiBold&quot;;</string>
    </property>
    <property name="text">
-    <string>Don't have an account yet? Create one here</string>
+    <string>Create your account!</string>
    </property>
    <property name="scaledContents">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="Line" name="line_2">
+  <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>660</y>
-     <width>971</width>
-     <height>31</height>
+     <x>340</x>
+     <y>520</y>
+     <width>211</width>
+     <height>41</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(225,225,225);
+font: 15pt &quot;ROG Fonts&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Email : </string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Email_2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>520</y>
+     <width>391</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>440</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(225,225,225);
+font: 15pt &quot;ROG Fonts&quot;;</string>
+   </property>
+   <property name="text">
+    <string>USERNAME : </string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Email_3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>440</y>
+     <width>391</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
