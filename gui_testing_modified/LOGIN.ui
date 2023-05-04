@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>-140</x>
-     <y>-10</y>
+     <y>-30</y>
      <width>1541</width>
      <height>831</height>
     </rect>
@@ -35,9 +35,9 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>0</x>
      <y>40</y>
-     <width>651</width>
+     <width>1201</width>
      <height>121</height>
     </rect>
    </property>
@@ -51,13 +51,16 @@ font: 42pt &quot;Asus Rog&quot;;</string>
    <property name="scaledContents">
     <bool>false</bool>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>130</y>
-     <width>841</width>
+     <x>0</x>
+     <y>210</y>
+     <width>1201</width>
      <height>121</height>
     </rect>
    </property>
@@ -71,12 +74,15 @@ font: 30pt &quot;ROG Fonts&quot;;</string>
    <property name="scaledContents">
     <bool>false</bool>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>300</y>
+     <y>370</y>
      <width>211</width>
      <height>41</height>
     </rect>
@@ -96,7 +102,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
    <property name="geometry">
     <rect>
      <x>310</x>
-     <y>380</y>
+     <y>450</y>
      <width>211</width>
      <height>41</height>
     </rect>
@@ -116,7 +122,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
    <property name="geometry">
     <rect>
      <x>270</x>
-     <y>460</y>
+     <y>530</y>
      <width>211</width>
      <height>41</height>
     </rect>
@@ -136,7 +142,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>380</y>
+     <y>450</y>
      <width>391</width>
      <height>41</height>
     </rect>
@@ -149,7 +155,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>460</y>
+     <y>530</y>
      <width>391</width>
      <height>41</height>
     </rect>
@@ -164,8 +170,8 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
   <widget class="QPushButton" name="SignIN">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>610</y>
+     <x>750</x>
+     <y>590</y>
      <width>131</width>
      <height>51</height>
     </rect>
@@ -184,9 +190,9 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
   <widget class="QPushButton" name="Register">
    <property name="geometry">
     <rect>
-     <x>770</x>
-     <y>610</y>
-     <width>121</width>
+     <x>690</x>
+     <y>710</y>
+     <width>201</width>
      <height>51</height>
     </rect>
    </property>
@@ -194,7 +200,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
    <property name="text">
-    <string>Register</string>
+    <string>Create New Account</string>
    </property>
    <property name="icon">
     <iconset>
@@ -205,7 +211,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>290</y>
+     <y>360</y>
      <width>391</width>
      <height>41</height>
     </rect>
@@ -223,6 +229,52 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string>ADMIN</string>
     </property>
    </item>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>190</y>
+     <width>971</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>690</y>
+     <width>441</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(225,225,225);
+font: 15pt &quot;Oswald SemiBold&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Don't have an account yet? Create one here</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>660</y>
+     <width>971</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
   </widget>
  </widget>
  <resources/>
