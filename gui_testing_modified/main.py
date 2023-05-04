@@ -8,7 +8,16 @@ mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', databa
 mycur = mycon.cursor()
 myemail="xyz"
 
-class MainUI(QDialog):
+
+class MainUI(QMainWindow)
+ def __init__(self):
+        super(MainUI, self).__init__()
+
+        # Load the ui file
+        loadUi('C:\\Users\\linet\\OneDrive\\Documents\\GitHub\\Compooter-Projekt\\gui_testing_modified\\cart.ui',self)
+
+
+class Cart(QDialog):
     def __init__(self):
         super(MainUI, self).__init__()
 
@@ -17,6 +26,7 @@ class MainUI(QDialog):
 
   
         # When button pressed, Open new window
+        self.ADD.clicked.connect(self.CartWindow)
         self.BUY.clicked.connect(self.PaymentWindow)
         #self.show()
         self.ProductList.itemChanged.connect(self.updateAmt)
@@ -40,6 +50,10 @@ class MainUI(QDialog):
             amount = respro[0][3] * rescart[i][1]            
             self.ProductList.setItem(i,4,QTableWidgetItem(str(amount)))
             i=i+1
+
+    def CartWindow(self):
+        dialog = Ui_CartWindowDialog()
+        dialog.exec()
 
 
     def PaymentWindow(self):

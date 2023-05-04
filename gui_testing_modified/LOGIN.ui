@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1202</width>
-    <height>801</height>
+    <height>824</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <x>-140</x>
      <y>-30</y>
      <width>1541</width>
-     <height>831</height>
+     <height>861</height>
     </rect>
    </property>
    <property name="text">
@@ -43,7 +43,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(191, 191, 191);
-font: 42pt &quot;Asus Rog&quot;;</string>
+font: 42pt &quot;ROG Fonts&quot;;</string>
    </property>
    <property name="text">
     <string>TORQUE CART</string>
