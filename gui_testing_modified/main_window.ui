@@ -249,7 +249,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <rect>
       <x>360</x>
       <y>380</y>
-      <width>211</width>
+      <width>161</width>
       <height>41</height>
      </rect>
     </property>
@@ -269,7 +269,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <rect>
       <x>920</x>
       <y>380</y>
-      <width>211</width>
+      <width>181</width>
       <height>41</height>
      </rect>
     </property>
@@ -278,7 +278,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
 font: 15pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="text">
-     <string>steering</string>
+     <string>STEERING</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -289,7 +289,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <rect>
       <x>600</x>
       <y>380</y>
-      <width>211</width>
+      <width>201</width>
       <height>41</height>
      </rect>
     </property>

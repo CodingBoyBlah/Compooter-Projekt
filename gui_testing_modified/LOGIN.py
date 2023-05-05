@@ -43,7 +43,9 @@ class Ui_LoginWindow(QDialog):
         #      grant access on match
         #      open ui window for next screen
         self.main_window = Ui_MainWindow()
+        self.main_window.parent = self
         self.main_window.show()
+        self.hide()
 
 
     def register_handler(self):

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1189</width>
-    <height>811</height>
+    <height>714</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -88,7 +88,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN">
+   <widget class="QPushButton" name="ts1">
     <property name="geometry">
      <rect>
       <x>810</x>
@@ -184,7 +184,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_2">
+   <widget class="QPushButton" name="ts2">
     <property name="geometry">
      <rect>
       <x>810</x>
@@ -213,7 +213,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
       <normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_3">
+   <widget class="QPushButton" name="ts3">
     <property name="geometry">
      <rect>
       <x>810</x>

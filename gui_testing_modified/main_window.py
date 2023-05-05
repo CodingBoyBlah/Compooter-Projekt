@@ -12,6 +12,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QPushButton, QLin
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 from pathlib import Path
+from suspension import Ui_SuspensionWindow
 
 class Ui_MainWindow(QMainWindow):
     def __init__(self):
@@ -36,14 +37,20 @@ class Ui_MainWindow(QMainWindow):
         self.exhaust.clicked.connect(self.exhaust_handler)
         self.engine.clicked.connect(self.engine_handler)
 
+    def closeEvent (self, event):
+        print("main window destroyed")
 
 
     def tyres_handler(self):
         print("tyres_handler")
+        self.parent.show()
+        self.hide()
         pass
 
     def suspension_handler(self):
         print("suspension_handler")
+        self.suspension_window = Ui_SuspensionWindow()
+        self.suspension_window.show()
         pass
 
     def steering_handler(self):
