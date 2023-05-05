@@ -7,7 +7,7 @@ import mysql.connector as mys
 mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
 mycur = mycon.cursor()
 myemail="xyz"
-global arg=10 
+arg=10 
 def AddToCart(slno):
     x=10
     return x
