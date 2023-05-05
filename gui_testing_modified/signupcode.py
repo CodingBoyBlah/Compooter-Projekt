@@ -10,13 +10,15 @@
 import mysql.connector as mys
 
 mycon=mys.connect(host='localhost', user='root', password='root', database='torquecart')
-if mycon.is_connected():
-        print("Connected")
+mycursor=mycon.cursor()
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+username, email, password = '','',''
 
 class Ui_Dialog(object):
+        
+
         def setupUi(self, Dialog):
                 Dialog.setObjectName("Dialog")
                 Dialog.resize(1202, 801)
@@ -109,23 +111,32 @@ class Ui_Dialog(object):
                 self.SignIN.clicked.connect(self.accept_username)
                 self.SignIN.clicked.connect(self.accept_email)
                 self.SignIN.clicked.connect(self.accept_password)
+                self.SignIN.clicked.connect(self.savetodb)
 
                 self.retranslateUi(Dialog)
                 QtCore.QMetaObject.connectSlotsByName(Dialog)
 
+        def savetodb(self):
+                global username
+                global email
+                global password
+                print("---->"+username)
+                q="insert into userinfo(name,email,password) values('"+username+"','"+email+"','"+password+"')"
+                mycursor.execute(q)
+                mycon.commit()
+        
         def accept_username(self):
-                username =(self.Email_3.text())
-                print(username)
+                global username
+                username = self.Email_3.text()
 
         def accept_email(self):
-                email =(self.Email_2.text())
-                print(email)
+                global email
+                email = self.Email_2.text()
 
         def accept_password(self):
-                password =(self.Password.text())
-                print(password)
+                global password
+                password = self.Password.text()
 
-        print(password)
 
         def retranslateUi(self, Dialog):
                 _translate = QtCore.QCoreApplication.translate
