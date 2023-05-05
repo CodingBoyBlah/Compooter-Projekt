@@ -72,7 +72,7 @@ font: 22pt &quot;ROG Fonts&quot;;</string>
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="BUY">
+  <widget class="QPushButton" name="home">
    <property name="geometry">
     <rect>
      <x>910</x>

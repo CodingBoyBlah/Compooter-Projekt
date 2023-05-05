@@ -254,7 +254,7 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="SignIN_3">
+  <widget class="QPushButton" name="add_12">
    <property name="geometry">
     <rect>
      <x>910</x>
