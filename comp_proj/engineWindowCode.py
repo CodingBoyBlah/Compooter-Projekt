@@ -2,13 +2,16 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel
 from PyQt5 import uic
 import sys
+from pathlib import Path
 
 class Ui_engineWindow(QMainWindow):
     def __init__(self):
         super(Ui_engineWindow, self).__init__()
 
+        filepath = Path(__file__).parent.resolve()
+        filepath = Path.joinpath(filepath, 'engineWindow.ui')
         # Load the ui file
-        uic.loadUi('engineWindow.ui',self)
+        uic.loadUi(filepath,self)
 
         # Defining Widgets
         self.header = self.findChild(QLabel, 'header_label')
