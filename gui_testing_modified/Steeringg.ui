@@ -51,7 +51,7 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="rims">
+    <widget class="QPushButton" name="track">
      <property name="geometry">
       <rect>
        <x>480</x>
@@ -70,7 +70,7 @@ color: rgb(0,0,0);
       <string>TRACK STEERING</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="track">
+    <widget class="QPushButton" name="drift">
      <property name="geometry">
       <rect>
        <x>480</x>
@@ -89,7 +89,7 @@ color: rgb(0,0,0);
       <string>DRIFT STEERING</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="offroad">
+    <widget class="QPushButton" name="carbon">
      <property name="geometry">
       <rect>
        <x>480</x>
@@ -187,9 +187,9 @@ font: 42pt &quot;ROG Fonts&quot;;
     </widget>
     <zorder>label_3</zorder>
     <zorder>label</zorder>
-    <zorder>rims</zorder>
     <zorder>track</zorder>
-    <zorder>offroad</zorder>
+    <zorder>drift</zorder>
+    <zorder>carbon</zorder>
     <zorder>back</zorder>
     <zorder>label_2</zorder>
    </widget>

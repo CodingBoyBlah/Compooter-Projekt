@@ -55,8 +55,8 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>300</y>
+     <x>410</x>
+     <y>380</y>
      <width>211</width>
      <height>41</height>
     </rect>
@@ -75,8 +75,8 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
   <widget class="QLineEdit" name="address">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>300</y>
+     <x>610</x>
+     <y>380</y>
      <width>391</width>
      <height>41</height>
     </rect>
@@ -85,11 +85,11 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Email_2">
+  <widget class="QLineEdit" name="phone">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>380</y>
+     <x>610</x>
+     <y>450</y>
      <width>391</width>
      <height>41</height>
     </rect>
@@ -101,8 +101,8 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>380</y>
+     <x>390</x>
+     <y>450</y>
      <width>211</width>
      <height>41</height>
     </rect>
@@ -121,8 +121,8 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
   <widget class="QPushButton" name="Confirm">
    <property name="geometry">
     <rect>
-     <x>840</x>
-     <y>570</y>
+     <x>860</x>
+     <y>670</y>
      <width>131</width>
      <height>51</height>
     </rect>
@@ -136,6 +136,43 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
    <property name="icon">
     <iconset>
      <normaloff>../Downloads/back-undo-return-button-png-5.png</normaloff>../Downloads/back-undo-return-button-png-5.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>320</y>
+     <width>361</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(225,225,225);
+font: 15pt &quot;ROG Fonts&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Total amount (INR) :</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amount">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>310</y>
+     <width>391</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
