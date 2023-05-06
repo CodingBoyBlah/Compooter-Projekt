@@ -139,7 +139,7 @@ class Ui_windowTyre(object):
                 self.label_2.setText(_translate("windowTyre", "EXHAUSTS"))
         
         def show_slipon(self, checked):
-                self.w = "C:\\Users\\evaan\\OneDrive\\Documents\\GitHub\\Compooter-Projekt\\gui_testing_modified\\SliponExhaust.ui"()
+                self.w = 
                 w.show()
 
 
