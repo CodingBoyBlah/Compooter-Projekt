@@ -120,7 +120,6 @@ class Ui_Dialog(object):
                 global username
                 global email
                 global password
-                print("---->"+username)
                 q="insert into userinfo(name,email,password) values('"+username+"','"+email+"','"+password+"')"
                 mycursor.execute(q)
                 mycon.commit()
