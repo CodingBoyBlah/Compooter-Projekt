@@ -7,7 +7,7 @@ import mysql.connector as mys
 mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
 mycur = mycon.cursor()
 myemail="xyz"
-global totalAmount
+totalAmount = 0
 arg=10 
 
 
@@ -90,7 +90,7 @@ class Ui_CartWindowDialog(QDialog):
         
         self.ProductList.itemChanged.connect(self.updateAmt)
 
-
+        global totalAmount
        # q1 = "SELECT * FROM cart WHERE email = 'xyz'"
         q1="SELECT * FROM cart WHERE email = %s"
         mycur.execute(q1,(myemail,))
@@ -120,52 +120,52 @@ class Ui_CartWindowDialog(QDialog):
         dialog.exec()
 
     def updateAmt(self, item):
+
+      global totalAmount
       if  item.column() == 3:
-          curRow = self.ProductList.currentRow();
-          prevCol = int (item.column()) - 1;
-          nextCol = int (item.column()) - 1;
+          #curRow = self.ProductList.currentRow();
+          prevCol = 2;
+          nextCol = 4;
           updatedQty = self.ProductList.item(item.row(), item.column()).text()
-
           ItemType = self.ProductList.item(item.row(), prevCol).text()
-          #amount = self.ProductList.item(item.row(), nextCol).text()
+          
+          #print(Origamount)
 
-          q2="SELECT remqty, price, slno from products WHERE item  = %s"
+          q2="SELECT Qty, price, slno from products WHERE item  = %s"
           mycur.execute(q2,(ItemType,))
           result = mycur.fetchall()
 
           #check sufficient qty
-          Qty = int(result[0][0])
+          QtyInStock = int(result[0][0])
+          slno = int(result[0][2])
 
-          if ("" != updatedQty and int(updatedQty) > Qty ):
+          if ("" != updatedQty and int(updatedQty) > QtyInStock ):
             self.ProductList.setItem(item.row(), item.column(),QTableWidgetItem("1"))
             msgBox = QMessageBox()
             msgBox.setText("Quantity selected not available")
             msgBox.exec()
           else:
             if ("" != updatedQty):
-                amount = int(result[0][1]) * int(updatedQty) 
-                self.ProductList.setItem(item.row(),4,QTableWidgetItem(str(amount)))
-                self.UpdateAmount()
 
-    def UpdateAmount(self):
-        totalAmount = 0
-        for row in range(self.ProductList.rowCount()):
-            for col in range(self.ProductList.columnCount()):
-                if (col == 4):
-                    item = self.ProductList.item(row, col)
-                    print(row,col)
-                    if not item or not item.text():
-                        print(row,col)
-                        rowAmount = item.text()                        
-                        print(rowAmount)
-                        totalAmount = int(rowAmount) + totalAmount
-
-        self.amount.setText(str(totalAmount))
-
+                #fetch the original amount and save it in Origamount
+                origAmtItem = self.ProductList.item(item.row(), nextCol)
+                if  origAmtItem : 
+                    Origamount = origAmtItem.text()
+                else:
+                    Origamount =""
+                
+                #calculate the new amount
+                newAmount = int(result[0][1]) * int(updatedQty) 
+                self.ProductList.setItem(item.row(),4,QTableWidgetItem(str(newAmount)))
+                
+                #recalcualte the Total Amount by sutracting the OrigAmount and adding newAmount
+                #update the Total in the label
+                if ("" != Origamount):
+                    totalAmount = totalAmount - int(Origamount) + newAmount
+                    self.amount.setText(str(totalAmount))
 
 
-          
-          #self.ProductList.setItem(i,4,QTableWidgetItem(str(amount)))
+
 
 class Ui_PaymentWindowDialog(QDialog): 
     def __init__(self):
@@ -189,6 +189,32 @@ class Ui_ConfirmationWindowDialog(QDialog):
         loadUi("C:\\Users\\linet\\OneDrive\\Documents\\GitHub\\Compooter-Projekt\\gui_testing_modified\\confirmation.ui", self)
 
         self.home.clicked.connect(self.MainWindow)
+
+        #fetch all products
+        q1 = "SELECT slno, qty FROM  products "
+        mycur.execute(q1)
+        resProd = mycur.fetchall()
+        i=0
+        for row in resProd:
+                ProdSlno = resProd[i][0]
+                QtyInStock =resProd[i][1]
+                #fetch all rows in cart for a particular prod slno
+                q2 = "SELECT qty FROM  cart WHERE slno = %s "
+                mycur.execute(q2,(ProdSlno,))
+                resCart = mycur.fetchall()
+                j=0
+                ReaminingQty = int(QtyInStock)
+                for row in resCart:
+                    updatedQty = resCart[j][0]
+
+                    #calcualte the remaining Qty and update in Products table for the respective product
+                    ReaminingQty = ReaminingQty - int(updatedQty)
+                   
+                    q3 = "UPDATE  products SET qty = %s WHERE slno = %s"                
+                    mycur.execute(q3,(ReaminingQty,ProdSlno))
+                    mycon.commit()
+                j=j+1
+        i=i+1
 
     def MainWindow(self):
         self.close()

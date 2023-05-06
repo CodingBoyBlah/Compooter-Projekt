@@ -5,10 +5,36 @@
     
 '''
 
-from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QPushButton, QLineEdit, QDialog
+from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QPushButton, QLineEdit, QDialog , QMessageBox
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 from pathlib import Path
+
+
+import mysql.connector as mys
+mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
+mycur = mycon.cursor()
+myemail="xyz"
+
+
+ #Add item to Cart
+def AddToCart(slno):        
+    
+    q4="SELECT price, item from products WHERE slno  = %s"
+    mycur.execute(q4,(slno,))
+    result = mycur.fetchall()
+
+    global myemail
+
+    q3 = "insert into cart (slno,qty,amt,email) values ('{0}','{1}','{2}','{3}')".format(slno,1, result[0][0],myemail)
+    
+    mycur.execute(q3)
+    mycon.commit()
+
+    msgBox = QMessageBox()
+    mesg = "Added "+result[0][1]+" to cart"
+    msgBox.setText(mesg)
+    msgBox.exec()
 
 
 ###############################################################################
@@ -21,27 +47,17 @@ class Ui_offroadSuspensionWindow(QMainWindow):
         # Load the ui file
         uic.loadUi(filepath,self)
 
-        self.button1 = self.findChild(QPushButton, 'SignIN')
-        self.button2 = self.findChild(QPushButton, 'SignIN_2')
-        self.button3 = self.findChild(QPushButton, 'SignIN_3')
 
-        self.button1.clicked.connect(self.button1_handler)
-        self.button2.clicked.connect(self.button2_handler)
-        self.button3.clicked.connect(self.button3_handler)
+        self.button1 = self.findChild(QPushButton, 'add_31')
+        self.button2 = self.findChild(QPushButton, 'add_32')
+        self.button3 = self.findChild(QPushButton, 'add_33')
+
+        self.button1.clicked.connect(lambda:AddToCart(31))
+        self.button2.clicked.connect(lambda:AddToCart(32))
+        self.button3.clicked.connect(lambda:AddToCart(33))
 
 
-
-    def button1_handler(self):
-        print("button1_handler")
-        pass
-
-    def button2_handler(self):
-        print("button2_handler")
-        pass
-
-    def button3_handler(self):
-        print("button3_handler")
-        pass
+###################################################################################         
 
 class Ui_trackSuspensionWindow(QMainWindow):
     def __init__(self):
@@ -52,27 +68,15 @@ class Ui_trackSuspensionWindow(QMainWindow):
         # Load the ui file
         uic.loadUi(filepath,self)
 
-        self.button1 = self.findChild(QPushButton, 'SignIN')
-        self.button2 = self.findChild(QPushButton, 'SignIN_2')
-        self.button3 = self.findChild(QPushButton, 'SignIN_3')
+        self.button1 = self.findChild(QPushButton, 'add_34')
+        self.button2 = self.findChild(QPushButton, 'add_35')
+        self.button3 = self.findChild(QPushButton, 'add_36')
 
-        self.button1.clicked.connect(self.button1_handler)
-        self.button2.clicked.connect(self.button2_handler)
-        self.button3.clicked.connect(self.button3_handler)
+        self.button1.clicked.connect(lambda:AddToCart(34))
+        self.button2.clicked.connect(lambda:AddToCart(35))
+        self.button3.clicked.connect(lambda:AddToCart(36))
 
-
-
-    def button1_handler(self):
-        print("button1_handler")
-        pass
-
-    def button2_handler(self):
-        print("button2_handler")
-        pass
-
-    def button3_handler(self):
-        print("button3_handler")
-        pass
+###################################################################################
 
 
 class Ui_airSuspensionWindow(QMainWindow):
@@ -84,27 +88,16 @@ class Ui_airSuspensionWindow(QMainWindow):
         # Load the ui file
         uic.loadUi(filepath,self)
 
-        self.button1 = self.findChild(QPushButton, 'SignIN')
-        self.button2 = self.findChild(QPushButton, 'SignIN_2')
-        self.button3 = self.findChild(QPushButton, 'SignIN_3')
+        
+        
+        self.button1 = self.findChild(QPushButton, 'add_28')
+        self.button2 = self.findChild(QPushButton, 'add_29')
+        self.button3 = self.findChild(QPushButton, 'add_30')
 
-        self.button1.clicked.connect(self.button1_handler)
-        self.button2.clicked.connect(self.button2_handler)
-        self.button3.clicked.connect(self.button3_handler)
+        self.button1.clicked.connect(lambda:AddToCart(28))
+        self.button2.clicked.connect(lambda:AddToCart(29))
+        self.button3.clicked.connect(lambda:AddToCart(30))
 
-
-
-    def button1_handler(self):
-        print("button1_handler")
-        pass
-
-    def button2_handler(self):
-        print("button2_handler")
-        pass
-
-    def button3_handler(self):
-        print("button3_handler")
-        pass
 
 ###############################################################################
 

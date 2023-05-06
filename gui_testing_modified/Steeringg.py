@@ -5,14 +5,41 @@
 
 '''
 
-from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QPushButton, QLineEdit, QDialog
+from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QPushButton, QLineEdit, QDialog, QMessageBox
 from PyQt5 import QtWidgets
 from PyQt5 import uic
 from pathlib import Path
 
+
+import mysql.connector as mys
+mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
+mycur = mycon.cursor()
+myemail="xyz"
+
+
+ #Add item to Cart
+def AddToCart(slno):        
+    
+    q4="SELECT price, item from products WHERE slno  = %s"
+    mycur.execute(q4,(slno,))
+    result = mycur.fetchall()
+
+    global myemail
+
+    q3 = "insert into cart (slno,qty,amt,email) values ('{0}','{1}','{2}','{3}')".format(slno,1, result[0][0],myemail)
+    
+    mycur.execute(q3)
+    mycon.commit()
+
+    msgBox = QMessageBox()
+    mesg = "Added "+result[0][1]+" to cart"
+    msgBox.setText(mesg)
+    msgBox.exec()
+
+
 ###############################################################################
 class Ui_commonSteeringsWindow(QMainWindow):
-    def __init__(self, ui_file):
+    def __init__(self, ui_file,subType):
         super(Ui_commonSteeringsWindow, self).__init__()
 
         self.ui_name = ui_file[:-3]
@@ -21,27 +48,35 @@ class Ui_commonSteeringsWindow(QMainWindow):
         # Load the ui file
         uic.loadUi(filepath,self)
 
-        self.button1 = self.findChild(QPushButton, 'SignIN')
-        self.button2 = self.findChild(QPushButton, 'SignIN_2')
-        self.button3 = self.findChild(QPushButton, 'SignIN_3')
 
-        self.button1.clicked.connect(self.button1_handler)
-        self.button2.clicked.connect(self.button2_handler)
-        self.button3.clicked.connect(self.button3_handler)
+        if (subType == "carbon"):
+            self.button1 = self.findChild(QPushButton, 'add_19')
+            self.button2 = self.findChild(QPushButton, 'add_20')
+            self.button3 = self.findChild(QPushButton, 'add_21')
+
+            self.button1.clicked.connect(lambda:AddToCart(19))
+            self.button2.clicked.connect(lambda:AddToCart(20))
+            self.button3.clicked.connect(lambda:AddToCart(21))
 
 
+        if (subType == "drift"):
+            self.button1 = self.findChild(QPushButton, 'add_22')
+            self.button2 = self.findChild(QPushButton, 'add_23')
+            self.button3 = self.findChild(QPushButton, 'add_24')
 
-    def button1_handler(self):
-        print(f"{self.ui_name} button1_handler")
-        pass
+            self.button1.clicked.connect(lambda:AddToCart(22))
+            self.button2.clicked.connect(lambda:AddToCart(23))
+            self.button3.clicked.connect(lambda:AddToCart(24))
 
-    def button2_handler(self):
-        print(f"{self.ui_name} button2_handler")
-        pass
 
-    def button3_handler(self):
-        print(f"{self.ui_name} button3_handler")
-        pass
+        if (subType == "track"):
+            self.button1 = self.findChild(QPushButton, 'add_25')
+            self.button2 = self.findChild(QPushButton, 'add_26')
+            self.button3 = self.findChild(QPushButton, 'add_27')
+
+            self.button1.clicked.connect(lambda:AddToCart(25))
+            self.button2.clicked.connect(lambda:AddToCart(26))
+            self.button3.clicked.connect(lambda:AddToCart(27))
 
 
 
@@ -56,9 +91,9 @@ class Ui_SteeringWindow(QMainWindow):
         # Load the ui file
         uic.loadUi(filepath,self)
 
-        self.rims = self.findChild(QPushButton, 'rims')
-        self.track = self.findChild(QPushButton, 'track')
-        self.offroad = self.findChild(QPushButton, 'offroad')
+        self.rims = self.findChild(QPushButton, 'track')
+        self.track = self.findChild(QPushButton, 'drift')
+        self.offroad = self.findChild(QPushButton, 'carbon')
 
         self.rims.clicked.connect(self.rims_handler)
         self.track.clicked.connect(self.track_handler)
@@ -68,19 +103,19 @@ class Ui_SteeringWindow(QMainWindow):
 
     def rims_handler(self):
         print("rims_handler")
-        self.rims_Steering = Ui_commonSteeringsWindow("TrackSteering.ui")
+        self.rims_Steering = Ui_commonSteeringsWindow("TrackSteering.ui",'track')
         self.rims_Steering.show()
         pass
 
     def track_handler(self):
         print("track_handler")
-        self.track_Steering = Ui_commonSteeringsWindow("drift steering.ui")
+        self.track_Steering = Ui_commonSteeringsWindow("drift steering.ui",'drift')
         self.track_Steering.show()
         pass
 
     def offroad_handler(self):
         print("offroad_handler")
-        self.offroad_Steering = Ui_commonSteeringsWindow("carbon steering.ui")
+        self.offroad_Steering = Ui_commonSteeringsWindow("carbon steering.ui",'carbon')
         self.offroad_Steering.show()
         pass
 

@@ -88,7 +88,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN">
+   <widget class="QPushButton" name="add_25">
     <property name="geometry">
      <rect>
       <x>790</x>
@@ -184,7 +184,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_2">
+   <widget class="QPushButton" name="add_26">
     <property name="geometry">
      <rect>
       <x>790</x>
@@ -213,7 +213,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
       <normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_3">
+   <widget class="QPushButton" name="add_27">
     <property name="geometry">
      <rect>
       <x>790</x>
