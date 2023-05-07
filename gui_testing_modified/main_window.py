@@ -13,6 +13,8 @@ from suspension import Ui_SuspensionWindow
 from Steeringg import Ui_SteeringWindow
 from tyre import Ui_tyreWindow
 from oils import Ui_OilWindow
+from exhaust import Ui_ExhaustWindow
+from engine import Ui_EngineWindow
 
 
 import mysql.connector as mys
@@ -78,10 +80,14 @@ class Ui_MainWindow(QMainWindow):
 
     def exhaust_handler(self):
         print("exhaust_handler")
+        self.suspension_window = Ui_ExhaustWindow()
+        self.suspension_window.show()
         pass
 
     def engine_handler(self):
         print("engine_handler")
+        self.suspension_window = Ui_EngineWindow()
+        self.suspension_window.show()
         pass
 
     def CartWindow(self):
