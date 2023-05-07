@@ -14,6 +14,8 @@ mycon=mys.connect(host='localhost', user='root', password='root', database='torq
 mycursor=mycon.cursor()
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from signupcode import Ui_Dialog
+from main_window import Ui_MainWindow
 
 emailid, password1 = '',''
 
@@ -69,7 +71,7 @@ class Ui_Dialog(object):
                 self.Password.setObjectName("Password")
 
 
-
+                #SIGNIN BUTTON
                 self.SignIN = QtWidgets.QPushButton(Dialog)
                 self.SignIN.setGeometry(QtCore.QRect(530, 570, 131, 51))
                 self.SignIN.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
@@ -77,11 +79,16 @@ class Ui_Dialog(object):
                 icon.addPixmap(QtGui.QPixmap("../Downloads/back-undo-return-button-png-5.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
                 self.SignIN.setIcon(icon)
                 self.SignIN.setObjectName("SignIN")
+
+
+                #CREATE ACCOUNT BUTTON
                 self.Register = QtWidgets.QPushButton(Dialog)
                 self.Register.setGeometry(QtCore.QRect(690, 710, 201, 51))
                 self.Register.setStyleSheet("font: 10pt \"MS Shell Dlg 2\";")
                 self.Register.setIcon(icon)
                 self.Register.setObjectName("Register")
+
+
                 self.line = QtWidgets.QFrame(Dialog)
                 self.line.setGeometry(QtCore.QRect(120, 190, 971, 31))
                 self.line.setFrameShape(QtWidgets.QFrame.HLine)
@@ -102,6 +109,8 @@ class Ui_Dialog(object):
                 self.SignIN.clicked.connect(self.accept_email)
                 self.SignIN.clicked.connect(self.accept_password)
                 self.SignIN.clicked.connect(self.savetodb)
+
+                self.Register.clicked.connect(self.movetocreate)
 
 
                 self.retranslateUi(Dialog)
@@ -129,6 +138,17 @@ class Ui_Dialog(object):
                         q="insert into activeuser values('"+emailid+"')"
                         mycursor.execute(q)
                         mycon.commit()
+                        self.main_window = Ui_MainWindow()
+                        self.main_window.parent = self
+                        self.main_window.show()
+                        self.hide()
+
+        
+        def movetocreate(self):
+                self.signup_window = Ui_Dialog()
+                self.signup_window.show()
+
+                        
 
                 #q="insert into userinfo(name,email,password) values('"+username+"','"+email+"','"+password+"')"
                 #mycursor.execute(q)
@@ -145,6 +165,8 @@ class Ui_Dialog(object):
                 self.SignIN.setText(_translate("Dialog", "Log In"))
                 self.Register.setText(_translate("Dialog", "Create New Account"))
                 self.label_7.setText(_translate("Dialog", "Don\'t have an account yet? Create one here"))
+
+        
 
 
 if __name__ == "__main__":
