@@ -112,11 +112,11 @@ class Ui_ExhaustWindow(QMainWindow):
 
         self.air = self.findChild(QPushButton, 'sliponbutton')
         self.track = self.findChild(QPushButton, 'fullsysbutton')
-        self.offroad = self.findChild(QPushButton, 'factorybutton')
+        self.offroad = self.findChild(QPushButton, 'factorybutton_2')
 
         self.sliponbutton.clicked.connect(self.slipon_handler)
         self.fullsysbutton.clicked.connect(self.fullsys_handler)
-        self.factorybutton.clicked.connect(self.factory_handler)
+        self.factorybutton_2.clicked.connect(self.factory_handler)
 
 
 
