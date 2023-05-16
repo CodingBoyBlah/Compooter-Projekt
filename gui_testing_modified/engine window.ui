@@ -108,7 +108,7 @@ color: rgb(0,0,0);</string>
      <string>flat 6</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="back">
+   <widget class="QPushButton" name="EngineBack">
     <property name="geometry">
      <rect>
       <x>830</x>
@@ -133,7 +133,7 @@ color: rgb(0,0,0);</string>
    <zorder>label_2</zorder>
    <zorder>v10</zorder>
    <zorder>flat6</zorder>
-   <zorder>back</zorder>
+   <zorder>EngineBack</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

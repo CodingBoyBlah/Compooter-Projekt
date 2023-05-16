@@ -47,7 +47,7 @@
 font: 42pt &quot;ROG Fonts&quot;;</string>
     </property>
     <property name="text">
-     <string>FULL SYSTEM EXHAUST</string>
+     <string>SLIP-ON EXHAUST</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -79,7 +79,7 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
 font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;AKRAPOVIC 959 PANIGALE CARBON&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Make - Akrapovic&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Model - 959 Panigale Carbon Exhaust&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Cost - INR 6,20,000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;AKRAPOVIC SLIP-ON SYSTEM Z650&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Make - Akrapovic&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Model - Z650 Slip-On Exhaust&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Cost - INR 1,20,000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::RichText</enum>
@@ -88,7 +88,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN">
+   <widget class="QPushButton" name="add_49">
     <property name="geometry">
      <rect>
       <x>900</x>
@@ -134,7 +134,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>exx1.webp</pixmap>
+     <pixmap>exxx1.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -158,7 +158,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;SC PROJECT S1000RR TITANIUM&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Make - SC Project&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Model - S1000RR Titanium&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Cost - INR 4,21,000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;ARROW MOTORSPORT R1 SLIPON EXHAUST&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Make - Arrow Motorsport&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Model - R1 Slip-On Exhaust&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Cost - INR 3,21,000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -178,13 +178,13 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;
 font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;AKRAPOVIC V4S TITANIUM&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Make - Akrapovic&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Model - V4S Titanium&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Cost - INR 7,90,000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;SC PROJECT ZX-10R SLIPON EXHAUST&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Make - SC Project&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Model - ZX-10R SlipOn System&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Cost - INR 1,90,000&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_2">
+   <widget class="QPushButton" name="add_50">
     <property name="geometry">
      <rect>
       <x>900</x>
@@ -213,7 +213,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
       <normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_3">
+   <widget class="QPushButton" name="add_51">
     <property name="geometry">
      <rect>
       <x>900</x>
@@ -285,7 +285,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>exx2.png</pixmap>
+     <pixmap>exxx2.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -311,7 +311,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>exx3.jpg</pixmap>
+     <pixmap>exxx3.webp</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

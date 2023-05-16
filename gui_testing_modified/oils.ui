@@ -51,7 +51,7 @@
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="rims">
+    <widget class="QPushButton" name="engine">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -70,7 +70,7 @@ color: rgb(0,0,0);
       <string>ENGINE OIL</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="track">
+    <widget class="QPushButton" name="transmission">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -89,7 +89,7 @@ color: rgb(0,0,0);
       <string>TRANSMISSION OIL</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="offroad">
+    <widget class="QPushButton" name="brake">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -119,7 +119,7 @@ color: rgb(0,0,0);
       <string>BRAKE FLUID</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="back">
+    <widget class="QPushButton" name="OilsBack">
      <property name="geometry">
       <rect>
        <x>1060</x>
@@ -186,10 +186,10 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
     </widget>
     <zorder>label_3</zorder>
     <zorder>label</zorder>
-    <zorder>rims</zorder>
-    <zorder>track</zorder>
-    <zorder>offroad</zorder>
-    <zorder>back</zorder>
+    <zorder>engine</zorder>
+    <zorder>transmission</zorder>
+    <zorder>brake</zorder>
+    <zorder>OilsBack</zorder>
     <zorder>label_2</zorder>
    </widget>
   </widget>

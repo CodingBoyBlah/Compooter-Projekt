@@ -128,7 +128,7 @@ color: rgb(0,0,0);
       <string>STREET TYRES</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="back">
+    <widget class="QPushButton" name="TyresBack">
      <property name="geometry">
       <rect>
        <x>1150</x>

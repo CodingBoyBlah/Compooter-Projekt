@@ -174,7 +174,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN">
+   <widget class="QPushButton" name="add_10">
     <property name="geometry">
      <rect>
       <x>820</x>
@@ -203,7 +203,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
       <normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_2">
+   <widget class="QPushButton" name="add_11">
     <property name="geometry">
      <rect>
       <x>820</x>
@@ -232,7 +232,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
       <normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</normaloff>../../../../../../../Downloads/back-undo-return-button-png-5.png</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="SignIN_3">
+   <widget class="QPushButton" name="add_12">
     <property name="geometry">
      <rect>
       <x>820</x>
