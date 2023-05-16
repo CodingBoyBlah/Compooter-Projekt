@@ -10,11 +10,11 @@
 
 import mysql.connector as mys
 
-mycon=mys.connect(host='localhost', user='root', password='root', database='torquecart')
+mycon=mys.connect(host='localhost', user='root', password='slay', database='torquecart')
 mycursor=mycon.cursor()
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from signupcode import Ui_Dialog
+from signupcode import Ui_SignUpDialog
 from main_window import Ui_MainWindow
 
 emailid, password1 = '',''
@@ -138,16 +138,18 @@ class Ui_Dialog(object):
                         q="insert into activeuser values('"+emailid+"')"
                         mycursor.execute(q)
                         mycon.commit()
-                        self.main_window = Ui_MainWindow()
-                        self.main_window.parent = self
-                        self.main_window.show()
+                        main_window = Ui_MainWindow()
+                        main_window.parent = self
+                        main_window.show()
                         self.hide()
 
         
         def movetocreate(self):
-                self.signup_window = Ui_Dialog()
-                self.signup_window.show()
-
+                Dialog = QtWidgets.QDialog()
+                signup_window = Ui_SignUpDialog()
+                signup_window.setupUi(Dialog)
+                signup_window.exec()
+                
                         
 
                 #q="insert into userinfo(name,email,password) values('"+username+"','"+email+"','"+password+"')"

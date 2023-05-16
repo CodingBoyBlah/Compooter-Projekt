@@ -85,9 +85,11 @@ class Ui_tyreWindow(QMainWindow):
         super(Ui_tyreWindow, self).__init__()
 
         filepath = Path(__file__).parent.resolve()
-        filepath = Path.joinpath(filepath, 'tyres.ui')
+        filepath = Path.joinpath(filepath, 'wheels.ui')
         # Load the ui file
         uic.loadUi(filepath,self)
+        self.TyresBack = self.findChild(QPushButton, 'TyresBack')
+        self.TyresBack.clicked.connect(self.tyres_close)
 
         self.track = self.findChild(QPushButton, 'track')
         self.offroad = self.findChild(QPushButton, 'offroad')
@@ -117,6 +119,10 @@ class Ui_tyreWindow(QMainWindow):
         self.streetTyres = Ui_commonTyresWindow('street tyres.ui','street')#Ui_offroadSuspensionWindow()
         self.streetTyres.show()
         pass
+
+    def tyres_close(self):
+        print("tyres_close")
+        self.close()
 
 
 

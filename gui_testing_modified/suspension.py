@@ -14,7 +14,7 @@ from pathlib import Path
 import mysql.connector as mys
 mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
 mycur = mycon.cursor()
-myemail="xyz"
+myemail=""
 
 
  #Add item to Cart
@@ -102,13 +102,15 @@ class Ui_airSuspensionWindow(QMainWindow):
 ###############################################################################
 
 class Ui_SuspensionWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self,loginUser):
         super(Ui_SuspensionWindow, self).__init__()
 
         filepath = Path(__file__).parent.resolve()
         filepath = Path.joinpath(filepath, 'Suspension.ui')
         # Load the ui file
         uic.loadUi(filepath,self)
+        self.SuspensionBack = self.findChild(QPushButton, 'SuspensionBack')
+        self.SuspensionBack.clicked.connect(self.suspension_close)
 
         self.air = self.findChild(QPushButton, 'air')
         self.track = self.findChild(QPushButton, 'track')
@@ -118,7 +120,8 @@ class Ui_SuspensionWindow(QMainWindow):
         self.track.clicked.connect(self.track_handler)
         self.offroad.clicked.connect(self.offroad_handler)
 
-
+        global myemail
+        myemail = loginUser
 
     def air_handler(self):
         print("air_handler")
@@ -137,6 +140,10 @@ class Ui_SuspensionWindow(QMainWindow):
         self.offroad_suspension = Ui_offroadSuspensionWindow()
         self.offroad_suspension.show()
         pass
+
+    def suspension_close(self):
+        print("suspension_close")
+        self.close()
 
 
 if __name__ == "__main__":

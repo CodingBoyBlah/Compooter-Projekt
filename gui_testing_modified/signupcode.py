@@ -9,14 +9,14 @@
 
 import mysql.connector as mys
 
-mycon=mys.connect(host='localhost', user='root', password='root', database='torquecart')
+mycon=mys.connect(host='localhost', user='root', password='slay', database='torquecart')
 mycursor=mycon.cursor()
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 username, email, password = '','',''
 
-class Ui_Dialog(object):
+class Ui_SignUpDialog(object):
         
 
         def setupUi(self, Dialog):
@@ -153,7 +153,7 @@ if __name__ == "__main__":
         import sys
         app = QtWidgets.QApplication(sys.argv)
         Dialog = QtWidgets.QDialog()
-        ui = Ui_Dialog()
+        ui = Ui_SignUpDialog()
         ui.setupUi(Dialog)
         Dialog.show()
         sys.exit(app.exec_())

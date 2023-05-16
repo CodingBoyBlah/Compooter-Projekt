@@ -14,7 +14,7 @@ from pathlib import Path
 import mysql.connector as mys
 mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
 mycur = mycon.cursor()
-myemail="xyz"
+myemail=""
 
 
  #Add item to Cart
@@ -102,13 +102,15 @@ class Ui_FactoryExhaustWindow(QMainWindow):
 ###############################################################################
 
 class Ui_ExhaustWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self,loginUser):
         super(Ui_ExhaustWindow, self).__init__()
 
         filepath = Path(__file__).parent.resolve()
         filepath = Path.joinpath(filepath, 'exhaust.ui')
         # Load the ui file
         uic.loadUi(filepath,self)
+        self.ExhaustBack = self.findChild(QPushButton, 'ExhaustBack')
+        self.ExhaustBack.clicked.connect(self.exhaust_close)
 
         self.air = self.findChild(QPushButton, 'sliponbutton')
         self.track = self.findChild(QPushButton, 'fullsysbutton')
@@ -117,6 +119,9 @@ class Ui_ExhaustWindow(QMainWindow):
         self.sliponbutton.clicked.connect(self.slipon_handler)
         self.fullsysbutton.clicked.connect(self.fullsys_handler)
         self.factorybutton_2.clicked.connect(self.factory_handler)
+
+        global myemail
+        myemail = loginUser
 
 
 
@@ -137,6 +142,10 @@ class Ui_ExhaustWindow(QMainWindow):
         self.factory_exhaust = Ui_FactoryExhaustWindow()
         self.factory_exhaust.show()
         pass
+
+    def exhaust_close(self):
+        print("exhaust_close")
+        self.close()
 
 
 if __name__ == "__main__":

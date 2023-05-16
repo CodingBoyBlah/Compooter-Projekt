@@ -14,7 +14,7 @@ from pathlib import Path
 import mysql.connector as mys
 mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
 mycur = mycon.cursor()
-myemail="xyz"
+myemail=""
 
 
  #Add item to Cart
@@ -83,13 +83,15 @@ class Ui_commonSteeringsWindow(QMainWindow):
 ###############################################################################
 
 class Ui_SteeringWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self,loginUser):
         super(Ui_SteeringWindow, self).__init__()
 
         filepath = Path(__file__).parent.resolve()
         filepath = Path.joinpath(filepath, 'Steeringg.ui')
         # Load the ui file
         uic.loadUi(filepath,self)
+        self.SteeringBack = self.findChild(QPushButton, 'SteeringBack')
+        self.SteeringBack.clicked.connect(self.steering_close)
 
         self.rims = self.findChild(QPushButton, 'track')
         self.track = self.findChild(QPushButton, 'drift')
@@ -99,7 +101,8 @@ class Ui_SteeringWindow(QMainWindow):
         self.track.clicked.connect(self.track_handler)
         self.offroad.clicked.connect(self.offroad_handler)
 
-
+        global myemail
+        myemail = loginUser
 
     def rims_handler(self):
         print("rims_handler")
@@ -118,6 +121,10 @@ class Ui_SteeringWindow(QMainWindow):
         self.offroad_Steering = Ui_commonSteeringsWindow("carbon steering.ui",'carbon')
         self.offroad_Steering.show()
         pass
+
+    def steering_close(self):
+        print("steering_close")
+        self.close()
 
 
 if __name__ == "__main__":

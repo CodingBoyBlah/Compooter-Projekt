@@ -14,7 +14,7 @@ from pathlib import Path
 import mysql.connector as mys
 mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
 mycur = mycon.cursor()
-myemail="xyz"
+myemail=""
 
 
  #Add item to Cart
@@ -102,13 +102,15 @@ class Ui_V10EngineWindow(QMainWindow):
 ###############################################################################
 
 class Ui_EngineWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self,loginUser):
         super(Ui_EngineWindow, self).__init__()
 
         filepath = Path(__file__).parent.resolve()
         filepath = Path.joinpath(filepath, 'engine window.ui')
         # Load the ui file
         uic.loadUi(filepath,self)
+        self.EngineBack = self.findChild(QPushButton, 'EngineBack')
+        self.EngineBack.clicked.connect(self.engine_close)
 
         self.air = self.findChild(QPushButton, 'v8')
         self.track = self.findChild(QPushButton, 'flat6')
@@ -118,6 +120,8 @@ class Ui_EngineWindow(QMainWindow):
         self.flat6.clicked.connect(self.flat6_handler)
         self.v10.clicked.connect(self.v10_handler)
 
+        global myemail
+        myemail = loginUser
 
 
     def v8_handler(self):
@@ -137,6 +141,10 @@ class Ui_EngineWindow(QMainWindow):
         self.v10_engine = Ui_V10EngineWindow()
         self.v10_engine.show()
         pass
+
+    def engine_close(self):
+        print("engine_close")
+        self.close()
 
 
 if __name__ == "__main__":

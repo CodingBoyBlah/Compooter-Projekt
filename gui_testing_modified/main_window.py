@@ -15,23 +15,26 @@ from tyre import Ui_tyreWindow
 from oils import Ui_OilWindow
 from exhaust import Ui_ExhaustWindow
 from engine import Ui_EngineWindow
+import phonenumbers
 
 
 import mysql.connector as mys
 mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
 mycur = mycon.cursor()
-myemail="xyz"
+LoggedInUserEmail=""
 totalAmount = 0
 
 class Ui_MainWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self,email):
         super(Ui_MainWindow, self).__init__()
 
         filepath = Path(__file__).parent.resolve()
         filepath = Path.joinpath(filepath, 'main_window.ui')
         # Load the ui file
         uic.loadUi(filepath,self)
-        global myemail
+        global LoggedInUserEmail
+        LoggedInUserEmail = email
+        
 
         self.tyres = self.findChild(QPushButton, 'tyres')
         self.suspension = self.findChild(QPushButton, 'suspension')
@@ -56,37 +59,37 @@ class Ui_MainWindow(QMainWindow):
 
     def tyres_handler(self):
         print("tyres_handler")
-        self.suspension_window = Ui_tyreWindow(myemail)
+        self.suspension_window = Ui_tyreWindow(LoggedInUserEmail)
         self.suspension_window.show()
         pass
 
     def suspension_handler(self):
         print("suspension_handler")
-        self.suspension_window = Ui_SuspensionWindow()
+        self.suspension_window = Ui_SuspensionWindow(LoggedInUserEmail)
         self.suspension_window.show()
         pass
 
     def steering_handler(self):
         print("steering_handler")
-        self.suspension_window = Ui_SteeringWindow()
+        self.suspension_window = Ui_SteeringWindow(LoggedInUserEmail)
         self.suspension_window.show()
         pass
 
     def oils_handler(self):
         print("oils_handler")
-        self.suspension_window = Ui_OilWindow()
+        self.suspension_window = Ui_OilWindow(LoggedInUserEmail)
         self.suspension_window.show()
         pass
 
     def exhaust_handler(self):
         print("exhaust_handler")
-        self.suspension_window = Ui_ExhaustWindow()
+        self.suspension_window = Ui_ExhaustWindow(LoggedInUserEmail)
         self.suspension_window.show()
         pass
 
     def engine_handler(self):
         print("engine_handler")
-        self.suspension_window = Ui_EngineWindow()
+        self.suspension_window = Ui_EngineWindow(LoggedInUserEmail)
         self.suspension_window.show()
         pass
 
@@ -112,19 +115,16 @@ class Ui_CartWindowDialog(QDialog):
         self.ProductList.itemChanged.connect(self.updateAmt)
 
         global totalAmount
-        global myemail
+        global LoggedInUserEmail
        
         q1="SELECT * FROM cart WHERE email = %s"
-        mycur.execute(q1,(myemail,))
-        print(myemail)
+        mycur.execute(q1,(LoggedInUserEmail,))
+        print(LoggedInUserEmail)
         rescart = mycur.fetchall()
         i=0 
-        totalAmount = 0
-        print("sql executed")
-
-    
+        totalAmount = 0    
         row_count = len(rescart)
-        print(row_count)
+        
         
         for row in rescart:
             slnocart = str(rescart[i][0])
@@ -140,7 +140,7 @@ class Ui_CartWindowDialog(QDialog):
             totalAmount = totalAmount + amount        
             self.ProductList.setItem(i,4,QTableWidgetItem(str(amount)))
             i=i+1
-            print(i)
+            
 
         self.amount.setText(str(totalAmount))
         
@@ -164,40 +164,46 @@ class Ui_CartWindowDialog(QDialog):
           prevCol = 2;
           nextCol = 4;
           updatedQty = self.ProductList.item(item.row(), item.column()).text()
-          ItemType = self.ProductList.item(item.row(), prevCol).text()
-          
-          q2="SELECT Qty, price, slno from products WHERE item  = %s"
-          mycur.execute(q2,(ItemType,))
-          result = mycur.fetchall()
+          if (updatedQty.isnumeric()):
+                  ItemType = self.ProductList.item(item.row(), prevCol).text()
+                  
+                  q2="SELECT Qty, price, slno from products WHERE item  = %s"
+                  mycur.execute(q2,(ItemType,))
+                  result = mycur.fetchall()
 
-          #check sufficient qty
-          QtyInStock = int(result[0][0])
-          slno = int(result[0][2])
+                  #check sufficient qty
+                  QtyInStock = int(result[0][0])
+                  slno = int(result[0][2])
 
-          if ("" != updatedQty and int(updatedQty) > QtyInStock ):
-            self.ProductList.setItem(item.row(), item.column(),QTableWidgetItem("1"))
-            msgBox = QMessageBox()
-            msgBox.setText("Quantity selected not available")
-            msgBox.exec()
+                  if ("" != updatedQty and int(updatedQty) > QtyInStock ):
+                    self.ProductList.setItem(item.row(), item.column(),QTableWidgetItem("1"))
+                    msgBox = QMessageBox()
+                    msgBox.setText("Quantity selected not available")
+                    msgBox.exec()
+                  else:
+                    if ("" != updatedQty):
+
+                        #fetch the original amount and save it in Origamount
+                        origAmtItem = self.ProductList.item(item.row(), nextCol)
+                        if  origAmtItem : 
+                            Origamount = origAmtItem.text()
+                        else:
+                            Origamount =""
+                        
+                        #calculate the new amount
+                        newAmount = int(result[0][1]) * int(updatedQty) 
+                        self.ProductList.setItem(item.row(),4,QTableWidgetItem(str(newAmount)))
+                        
+                        #recalcualte the Total Amount by sutracting the OrigAmount and adding newAmount
+                        #update the Total in the label
+                        if ("" != Origamount):
+                            totalAmount = totalAmount - int(Origamount) + newAmount
+                            self.amount.setText(str(totalAmount))
           else:
-            if ("" != updatedQty):
-
-                #fetch the original amount and save it in Origamount
-                origAmtItem = self.ProductList.item(item.row(), nextCol)
-                if  origAmtItem : 
-                    Origamount = origAmtItem.text()
-                else:
-                    Origamount =""
-                
-                #calculate the new amount
-                newAmount = int(result[0][1]) * int(updatedQty) 
-                self.ProductList.setItem(item.row(),4,QTableWidgetItem(str(newAmount)))
-                
-                #recalcualte the Total Amount by sutracting the OrigAmount and adding newAmount
-                #update the Total in the label
-                if ("" != Origamount):
-                    totalAmount = totalAmount - int(Origamount) + newAmount
-                    self.amount.setText(str(totalAmount))
+                self.ProductList.setItem(item.row(), item.column(),QTableWidgetItem("1"))
+                msgBox = QMessageBox()
+                msgBox.setText("Quantity should be numeric")
+                msgBox.exec()
 
 class Ui_PaymentWindowDialog(QDialog): 
     def __init__(self):
@@ -210,7 +216,7 @@ class Ui_PaymentWindowDialog(QDialog):
         filepath = Path.joinpath(filepath, 'payment.ui')
         # Load the ui file
         uic.loadUi(filepath,self)
-        print(filepath)
+        
 
         #self.amount.setText(str(totalAmount))
         self.Confirm.clicked.connect(self.ConfirmationWindow)
@@ -220,9 +226,22 @@ class Ui_PaymentWindowDialog(QDialog):
     def ConfirmationWindow(self):
         
         if self.address.text() != "" and self.phone.text() != "" :
-            self.close()
-            dialog = Ui_ConfirmationWindowDialog()
-            dialog.exec()
+            string_phone_number = self.phone.text()
+            try:
+                phone_number = phonenumbers.parse(string_phone_number)                
+                if phonenumbers.is_valid_number(phone_number):
+                    self.close()
+                    dialog = Ui_ConfirmationWindowDialog()
+                    dialog.exec()
+                else:
+                    msgBox = QMessageBox()
+                    msgBox.setText("Please enter valid phone number")
+                    msgBox.exec()   
+            except phonenumbers.phonenumberutil.NumberParseException:
+                msgBox = QMessageBox()
+                msgBox.setText("Please enter valid phone number")
+                msgBox.exec()         
+            
         else:
             msgBox = QMessageBox()
             msgBox.setText("Please enter address and phone number. Both are mandatory")
@@ -241,7 +260,7 @@ class Ui_ConfirmationWindowDialog(QDialog):
         
 
         self.home.clicked.connect(self.MainWindow)
-        global myemail
+        global LoggedInUserEmail
 
         #fetch all products
         q1 = "SELECT slno, qty FROM  products "
@@ -270,7 +289,7 @@ class Ui_ConfirmationWindowDialog(QDialog):
         i=i+1
 
         q4="DELETE from cart WHERE email = %s"
-        mycur.execute(q4,(myemail,))
+        mycur.execute(q4,(LoggedInUserEmail,))
         mycon.commit()
 
     def MainWindow(self):

@@ -119,7 +119,7 @@ color: rgb(0,0,0);
       <string>BRAKE FLUID</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="back">
+    <widget class="QPushButton" name="OilsBack">
      <property name="geometry">
       <rect>
        <x>1060</x>
@@ -189,7 +189,7 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
     <zorder>engine</zorder>
     <zorder>transmission</zorder>
     <zorder>brake</zorder>
-    <zorder>back</zorder>
+    <zorder>OilsBack</zorder>
     <zorder>label_2</zorder>
    </widget>
   </widget>

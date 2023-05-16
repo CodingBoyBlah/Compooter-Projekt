@@ -117,7 +117,7 @@ color: rgb(0,0,0);
       <string>TRACK SUSPENSION</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="back">
+    <widget class="QPushButton" name="SuspensionBack">
      <property name="geometry">
       <rect>
        <x>1050</x>
@@ -187,7 +187,7 @@ font: 42pt &quot;ROG Fonts&quot;;</string>
     <zorder>offroad</zorder>
     <zorder>air</zorder>
     <zorder>track</zorder>
-    <zorder>back</zorder>
+    <zorder>SuspensionBack</zorder>
     <zorder>label_2</zorder>
    </widget>
   </widget>

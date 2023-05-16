@@ -15,7 +15,7 @@ from pathlib import Path
 import mysql.connector as mys
 mycon = mys.connect(host = 'localhost', user = 'root', password = 'slay', database = 'torquecart')
 mycur = mycon.cursor()
-myemail="xyz"
+myemail=""
 
 
  #Add item to Cart
@@ -106,13 +106,15 @@ class Ui_engineOilWindow(QMainWindow):
 ###############################################################################
 
 class Ui_OilWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self,loginUser):
         super(Ui_OilWindow, self).__init__()
 
         filepath = Path(__file__).parent.resolve()
         filepath = Path.joinpath(filepath, 'Oils.ui')
         # Load the ui file
         uic.loadUi(filepath,self)
+        self.OilsBack = self.findChild(QPushButton, 'OilsBack')
+        self.OilsBack.clicked.connect(self.oils_close)
 
         self.engine = self.findChild(QPushButton, 'engine')
         self.transmission = self.findChild(QPushButton, 'transmission')
@@ -122,7 +124,8 @@ class Ui_OilWindow(QMainWindow):
         self.transmission.clicked.connect(self.trans_handler)
         self.brake.clicked.connect(self.brake_handler)
 
-
+        global myemail
+        myemail = loginUser
 
     def engine_handler(self):
         print("engine_handler")
@@ -141,6 +144,10 @@ class Ui_OilWindow(QMainWindow):
         self.offroad_Oil = Ui_brakeOilWindow()
         self.offroad_Oil.show()
         pass
+
+    def oils_close(self):
+        print("oils_close")
+        self.close()
 
 
 if __name__ == "__main__":

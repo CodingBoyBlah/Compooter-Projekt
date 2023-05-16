@@ -187,7 +187,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Email_2">
+  <widget class="QLineEdit" name="email">
    <property name="geometry">
     <rect>
      <x>490</x>
@@ -220,7 +220,7 @@ font: 15pt &quot;ROG Fonts&quot;;</string>
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QLineEdit" name="Email_3">
+  <widget class="QLineEdit" name="Username">
    <property name="geometry">
     <rect>
      <x>490</x>
